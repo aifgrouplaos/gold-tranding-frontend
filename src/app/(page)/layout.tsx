@@ -1,12 +1,11 @@
-"use client";
+
 import MainLayout from "@/components/layout/mainlayout"; 
-import Loadings from "@/components/loading/loading"; 
-import { usePathname } from 'next/navigation';
+import Loadings from "@/components/loading/loading";  
+import Wrapper from "./wrapper";
 export default function layout({ children }: { children: React.ReactNode }) {
-  const pathname=usePathname();
   return <MainLayout> 
     <Loadings>
-      <div className="text-grey paragraph">{pathname}</div>
+      <Wrapper/>
       {children}
     </Loadings> 
   </MainLayout>;
