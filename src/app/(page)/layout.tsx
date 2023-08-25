@@ -1,13 +1,13 @@
-"use client";
-import MainLayout from "@/components/layout/mainlayout"; 
-import Loadings from "@/components/loading/loading"; 
-import { usePathname } from 'next/navigation';
+import MainLayout from "@/components/layout/mainlayout";
+import Loadings from "@/components/loading/loading";
+ import Taplinkbar from "./taplinkbar";
 export default function layout({ children }: { children: React.ReactNode }) {
-  const pathname=usePathname();
-  return <MainLayout> 
-    <Loadings>
-      <div className="text-grey paragraph">{pathname}</div>
-      {children}
-    </Loadings> 
-  </MainLayout>;
+   return (
+    <MainLayout>
+      <Loadings>
+        <Taplinkbar />
+        {children}
+      </Loadings>
+    </MainLayout>
+  );
 }

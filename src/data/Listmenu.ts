@@ -127,5 +127,43 @@ export const Listmenu = [
         role: ["admin", "user"],
       }, 
     ],
+  },
+  {
+    id:10,
+    name: "test",
+    icon: '<i class=" fa-solid fa-gear"></i>',
+    type: "subMenu",
+    link: "/test",
+    sort: 2,
+    role: ["admin", "user"],
+    children: [
+      {
+        id:1,
+        name: "Manage Seller",
+        icon: '<i class="fa-solid fa-clipboard-user"></i>',
+        type: "link",
+        link: "/test/seller",
+        sort: 1,
+        role: ["admin", "user"],
+      },
+      {
+        id:2,
+        name: "Manage User",
+        icon: '<i class="fa-solid fa-user"></i>',
+        type: "link",
+        link: "/test/user",
+        sort: 1,
+        role: ["admin", "user"],
+      },
+      {
+        id:3,
+        name: "Manage Role",
+        icon: '<i class="fa-solid fa-shield-halved"></i>',
+        type: "link",
+        link: "/test/role",
+        sort: 1,
+        role: ["admin", "user"],
+      }, 
+    ],
   } 
 ];
