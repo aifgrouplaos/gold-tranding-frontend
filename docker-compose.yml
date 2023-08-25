@@ -1,0 +1,23 @@
+version: "3.9"
+
+services:
+  app:
+    build: .
+    container_name: laospost-web
+    restart: always
+
+  prod:
+    build: .
+    container_name: laospost-web-prod
+    restart: always
+    ports:
+      - "5055:5055"
+    command: npm run start
+
+  dev:
+    build: .
+    container_name: laospost-web-dev
+    restart: always
+    ports:
+      - "5056:5056"
+    command: npm run start
