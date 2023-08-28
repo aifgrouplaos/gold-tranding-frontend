@@ -93,7 +93,7 @@ export default function Updateseller() {
                   onClick={handleClose}
                   className="btn btn-secondary w-full"
                 >
-                  <AddRoundedIcon />
+                  <AddRoundedIcon fontSize="small" />
                   Create
                 </button>
               </div>
