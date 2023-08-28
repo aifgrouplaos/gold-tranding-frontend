@@ -723,22 +723,22 @@ main .content::-webkit-scrollbar-thumb {
 }
 
 .btn-block-error {
-  border: 2px solid var(--error-light);
+  border: 2px solid var(--error);
   background-color: var(--white);
   color: var(--error);
 }
 .btn-block-success {
-  border: 2px solid var(--primary-light);
+  border: 2px solid var(--success);
   background-color: var(--success-light);
   color: var(--success);
 }
 .btn-block-warning {
-  border: 2px solid var(--primary-light);
+  border: 2px solid var(--warning);
   background-color: var(--warning-light);
   color: var(--warning);
 }
 .btn-block-primary {
-  border: 2px solid var(--gray-light);
+  border: 2px solid var(--primary);
   background-color: var(--primary-light);
   color: var(--primary);
 } 
@@ -756,9 +756,25 @@ main .content::-webkit-scrollbar-thumb {
   padding: 5px 20px;
 }
 
+.form-select{
+  padding: 3px 10px;
+  height: 2.8em!important;
+  width: 100%;
+  font-size: 14px;
+  border: 2px solid var(--solid);
+  background-color: var(--white);
+  border-radius: 5px;
+  color: var(--dark); 
+} 
+.form-select:focus {
+  outline: none;
+  border: 2px solid var(--primary-light);
+}
+
+
 .form-control {
   padding: 3px 10px;
-  line-height: 2em;
+  line-height: 2em!important;
   width: 100%;
   font-size: 14px;
   border: 2px solid var(--solid);

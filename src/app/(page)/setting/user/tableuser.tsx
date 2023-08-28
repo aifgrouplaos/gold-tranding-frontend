@@ -1,11 +1,11 @@
 "use client";
 import React, { useState } from "react";
-import AddRoundedIcon from "@mui/icons-material/AddRounded";
 import BrowserUpdatedRoundedIcon from "@mui/icons-material/BrowserUpdatedRounded";
 import TuneRoundedIcon from "@mui/icons-material/TuneRounded";
 import Pagination from "@/components/pagination/pagination";
 import MoreHorizRoundedIcon from "@mui/icons-material/MoreHorizRounded";
 import Link from "next/link"; 
+import Createuser from "./create/createuser";
 export default function Tableuser() {
   const [status, setStatus] = useState<string>("all");
   const [limit, setLimit] = useState(10);
@@ -225,9 +225,8 @@ export default function Tableuser() {
     <div>
       <div className="h-[50px] flex justify-between items-center mb-2">
         <h4>Manage User</h4>
-        <button type="button" color="secondary" className="btn btn-secondary">
-          <AddRoundedIcon /> Create New User
-        </button>
+        
+        <Createuser/>
       </div>
       <div className="card">
         <div className="card-header px-3">

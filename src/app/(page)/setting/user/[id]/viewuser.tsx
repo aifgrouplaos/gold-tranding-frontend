@@ -4,11 +4,12 @@ import React, { useState } from "react";
 import ArrowBackRoundedIcon from "@mui/icons-material/ArrowBackRounded";
 import BrowserUpdatedRoundedIcon from "@mui/icons-material/BrowserUpdatedRounded";
 import DeleteForeverRoundedIcon from "@mui/icons-material/DeleteForeverRounded";
-import EditNoteRoundedIcon from "@mui/icons-material/EditNoteRounded";
-import PhoneInTalkRoundedIcon from "@mui/icons-material/PhoneInTalkRounded";
-import Image from "next/image";
-import Switch from "@/components/tools/switch/switch";
+ import PhoneInTalkRoundedIcon from "@mui/icons-material/PhoneInTalkRounded";
+import Image from "next/image"; 
 import LockResetRoundedIcon from "@mui/icons-material/LockResetRounded";
+import Updateuser from "../update/updateuser";
+import Userstatus from "../status/userstatus";
+import MenuDeleteUser from "../delete/deleteuser";
 export default function Viewuser() {
   const [status, setStatus] = useState(false);
   return (
@@ -18,13 +19,16 @@ export default function Viewuser() {
           <ArrowBackRoundedIcon fontSize="small" />
         </Link>
         <span className="font-bold text-xl">U-001</span>
-        <button className="btn btn-md btn-block-success">Active</button>
-        <button className="btn btn-md btn-block-error">
+        {/* <button className="btn btn-md btn-block-success">Active</button> */}
+        <Userstatus/>
+        <MenuDeleteUser/>
+        {/* <button className="btn btn-md btn-block-error">
           <DeleteForeverRoundedIcon fontSize="small" /> Delete
-        </button>
-        <button className="btn btn-md btn-default">
+        </button> */}
+        {/* <button className="btn btn-md btn-default">
           <EditNoteRoundedIcon fontSize="small" /> Edit
-        </button>
+        </button> */}
+        <Updateuser/>
         <button className="btn btn-md btn-default">
           <BrowserUpdatedRoundedIcon fontSize="small" /> Download
         </button>
@@ -72,15 +76,7 @@ export default function Viewuser() {
                 className="text-warning"
               />
               020-7814-9878
-            </p>
-            <p>
-              <Switch
-                name="status"
-                checked={status}
-                onClick={() => setStatus(!status)}
-                color="success"
-              />
-            </p>
+            </p> 
           </div>
         </div>
       </div>
