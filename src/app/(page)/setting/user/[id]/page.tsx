@@ -1,7 +1,9 @@
-import React from 'react'
-
+ import React from "react"; 
+import Viewuser from "./viewuser";
 export default function page() {
   return (
-    <div>View User</div>
-  )
+     <div>
+      <Viewuser/>
+     </div>
+  );
 }
