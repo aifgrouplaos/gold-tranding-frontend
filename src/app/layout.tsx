@@ -3,6 +3,7 @@ import React from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Customtheme } from "@/components/theme/customtheme";
+import "react-circular-progressbar/dist/styles.css";
 export default function layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">

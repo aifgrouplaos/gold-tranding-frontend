@@ -44,6 +44,7 @@ module.exports = {
         primary: "#12214A",
         info: "#42c5f5",
         warning: "#FF9900",
+        'warning-light': "#ffefd7",
         secondary: "#FFC630",
         white: "#fff",
         pink: "#ff49db",

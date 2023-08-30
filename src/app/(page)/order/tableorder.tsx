@@ -329,7 +329,7 @@ export default function Tableorder() {
                   </td>
                   <td>
                     <Link
-                      href="/positionorder/1"
+                      href="/order/1"
                       className="btn btn-sm btn-default"
                     >
                       <MoreHorizRoundedIcon fontSize="small" />
@@ -349,7 +349,7 @@ export default function Tableorder() {
                   </td>
                   <td>
                     <Link
-                      href="/positionorder/1"
+                      href="/order/1"
                       className="btn btn-sm btn-default"
                     >
                       <MoreHorizRoundedIcon fontSize="small" />
@@ -369,7 +369,7 @@ export default function Tableorder() {
                   </td>
                   <td>
                     <Link
-                      href="/positionorder/1"
+                      href="/order/1"
                       className="btn btn-sm btn-default"
                     >
                       <MoreHorizRoundedIcon fontSize="small" />
@@ -389,7 +389,7 @@ export default function Tableorder() {
                   </td>
                   <td>
                     <Link
-                      href="/positionorder/1"
+                      href="/order/1"
                       className="btn btn-sm btn-default"
                     >
                       <MoreHorizRoundedIcon fontSize="small" />
@@ -409,7 +409,7 @@ export default function Tableorder() {
                   </td>
                   <td>
                     <Link
-                      href="/positionorder/1"
+                      href="/order/1"
                       className="btn btn-sm btn-default"
                     >
                       <MoreHorizRoundedIcon fontSize="small" />
@@ -429,7 +429,7 @@ export default function Tableorder() {
                   </td>
                   <td>
                     <Link
-                      href="/positionorder/1"
+                      href="/order/1"
                       className="btn btn-sm btn-default"
                     >
                       <MoreHorizRoundedIcon fontSize="small" />
@@ -449,7 +449,7 @@ export default function Tableorder() {
                   </td>
                   <td>
                     <Link
-                      href="/positionorder/1"
+                      href="/order/1"
                       className="btn btn-sm btn-default"
                     >
                       <MoreHorizRoundedIcon fontSize="small" />
@@ -469,7 +469,7 @@ export default function Tableorder() {
                   </td>
                   <td>
                     <Link
-                      href="/positionorder/1"
+                      href="/order/1"
                       className="btn btn-sm btn-default"
                     >
                       <MoreHorizRoundedIcon fontSize="small" />
@@ -489,7 +489,7 @@ export default function Tableorder() {
                   </td>
                   <td>
                     <Link
-                      href="/positionorder/1"
+                      href="/order/1"
                       className="btn btn-sm btn-default"
                     >
                       <MoreHorizRoundedIcon fontSize="small" />
@@ -509,7 +509,7 @@ export default function Tableorder() {
                   </td>
                   <td>
                     <Link
-                      href="/positionorder/1"
+                      href="/order/1"
                       className="btn btn-sm btn-default"
                     >
                       <MoreHorizRoundedIcon fontSize="small" />
