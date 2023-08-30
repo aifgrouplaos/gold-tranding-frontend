@@ -1,8 +1,8 @@
 import React from 'react'
-import Tablerole from './tablerole'
-   
+import Tableorder from './tableorder'
+ 
 export default function page() {
   return (
-    <Tablerole/>
+    <Tableorder/>
   )
 }

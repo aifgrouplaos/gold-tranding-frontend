@@ -14,7 +14,7 @@ export const Listmenu = [
     name: "Position Order",
     icon: '<i class="fa-solid fa-receipt"></i>',
     type: "link",
-    link: "/positionorder",
+    link: "/order",
     sort: 1,
     role: ["admin", "user"],
     children: [],

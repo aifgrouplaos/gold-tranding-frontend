@@ -1,5 +1,5 @@
 /* @import url("https://fonts.cdnfonts.com/css/phetsarath"); */
-/* @tailwind base; */
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -14,7 +14,7 @@
   --danger-dark: #e71d36;
   --danger-light: #f3dbde;
   --error: #fc4242;
-  --error-light: #f3dbde; 
+  --error-light: #f3dbde;
   --success: #30f076;
   --success-light: #ebfff0;
   --success-dark: #00c853;
@@ -91,10 +91,11 @@ body {
   margin: 0;
   padding: 0;
 }
-input,
+
+/* input,
 button {
   border: 0;
-}
+} */
 
 i {
   font-family: "Font Awesome 6 Free" !important;
@@ -574,7 +575,7 @@ main .content::-webkit-scrollbar-thumb {
 
 .tab .tab-item.active,
 .tab-item:hover {
-  border-bottom: 2px solid var(--secondary);
+  border-bottom: 3px solid var(--secondary);
 }
 
 .tab .tab-item .tab-item-link {
@@ -675,6 +676,7 @@ main .content::-webkit-scrollbar-thumb {
   font-size: 16px;
   padding: 1px 20px;
   border-radius: 5px;
+  display: inline-block;
   transition: all 0.3s ease;
 }
 .btn:hover {
@@ -741,7 +743,7 @@ main .content::-webkit-scrollbar-thumb {
   border: 2px solid var(--primary);
   background-color: var(--primary-light);
   color: var(--primary);
-} 
+}
 
 .btn-sm {
   line-height: 1.5em !important;
@@ -756,29 +758,30 @@ main .content::-webkit-scrollbar-thumb {
   padding: 1px 20px;
 }
 
-.form-select{ 
+.form-select {
+  display: inline-block;
   padding: 3px 10px;
-  height: 2.8em!important;
+  height: 2.8em !important;
   width: 100%;
   font-size: 14px;
   border: 2px solid var(--solid);
   background-color: var(--white);
   border-radius: 5px;
-  color: var(--dark); 
-} 
+  color: var(--dark);
+}
 .form-select:focus {
   outline: none;
   border: 2px solid var(--primary-light);
 }
 
-
 .form-control {
+  display: inline-block;
   padding: 3px 10px;
-  line-height: 2em!important;
-  width: 100%;
-  font-size: 14px;
+  line-height: 2em !important;
   border: 2px solid var(--solid);
   background-color: var(--white);
+  width: 100%;
+  font-size: 14px;
   border-radius: 5px;
   color: var(--dark);
 }
@@ -796,6 +799,15 @@ main .content::-webkit-scrollbar-thumb {
 .form-control:focus {
   outline: none;
   border: 2px solid var(--primary-light);
+}
+
+.form-control.error{
+  color: var(--error);
+  border: 2px solid var(--error);
+}
+.form-control.success{
+  color: var(--success);
+  border: 2px solid var(--success);
 }
 
 h1 {
@@ -856,7 +868,7 @@ h6 {
   background-color: var(--light);
 }
 
-.table tr:hover td{
+.table tr:hover td {
   background-color: var(--primary-light);
 }
 
@@ -930,8 +942,7 @@ td:last-child {
   background-color: var(--secondary);
   color: var(--dark);
   transition: all 0.3s ease;
-} 
-
+}
 
 /* customize menu switch */
 .switch {
@@ -970,45 +981,45 @@ td:last-child {
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
- 
+
 input:checked + .slider {
   background-color: var(--primary);
-} 
+}
 input:focus + .slider {
   box-shadow: 0 0 1px var(--primary);
 }
 
 input:checked + .slider.error {
   background-color: var(--error);
-} 
+}
 input:focus + .slider.error {
   box-shadow: 0 0 1px var(--error);
 }
 
 input:checked + .slider.success {
   background-color: var(--success);
-} 
+}
 input:focus + .slider.success {
   box-shadow: 0 0 1px var(--success);
 }
 
 input:checked + .slider.warning {
   background-color: var(--warning);
-} 
+}
 input:focus + .slider.warning {
   box-shadow: 0 0 1px var(--warning);
 }
 
 input:checked + .slider.secondary {
   background-color: var(--secondary);
-} 
+}
 input:focus + .slider.secondary {
   box-shadow: 0 0 1px var(--secondary);
 }
 
 input:checked + .slider.info {
   background-color: var(--info);
-} 
+}
 input:focus + .slider.info {
   box-shadow: 0 0 1px var(--info);
 }
@@ -1018,7 +1029,7 @@ input:checked + .slider:before {
   -ms-transform: translateX(20px);
   transform: translateX(20px);
 }
- 
+
 .slider.round {
   border-radius: 34px;
 }
@@ -1026,3 +1037,123 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+/* customize menu radio */
+
+.group-radio {
+  user-select: none;
+  cursor: pointer;  
+  padding: 4px 10px;
+  line-height: 2em !important;  
+  display:flex; 
+  width: 100%; 
+  font-size: 14px;
+  border: 2px solid var(--solid);
+  background-color: var(--white);
+  border-radius: 5px;
+  color: var(--dark); 
+  gap: 5px;
+  align-items: center;
+}  
+ 
+input[type='radio']:before {
+  content:'';
+  display:block;
+  width:80%;
+  height:80%;
+  margin: 10% auto;    
+  border-radius:50%;    
+}
+
+.group-radio input[type='radio'] {
+  -webkit-appearance:none;
+  width:18px;
+  height:18px;
+  display: block;
+  border:1px solid var(--primary);
+  border-radius:50%;
+  outline:none; 
+} 
+.group-radio input[type='radio']:checked:before {
+  background:var(--primary);
+}
+
+.group-radio.success input[type='radio'] {
+  -webkit-appearance:none;
+  width:18px;
+  height:18px;
+  display: block;
+  border:1px solid var(--success);
+  border-radius:50%;
+  outline:none; 
+} 
+
+.group-radio.success input[type='radio']:checked:before {
+  background:var(--success);
+}
+
+.group-radio.error input[type='radio'] {
+  -webkit-appearance:none;
+  width:18px;
+  height:18px;
+  border:1px solid var(--error);
+  border-radius:50%;
+  outline:none; 
+} 
+
+.group-radio.error input[type='radio']:checked:before {
+  background:var(--error);
+}
+
+.group-radio.danger input[type='radio'] {
+  -webkit-appearance:none;
+  width:18px;
+  height:18px;
+  border:1px solid var(--danger);
+  border-radius:50%;
+  outline:none; 
+} 
+
+.group-radio.danger input[type='radio']:checked:before {
+  background:var(--danger);
+}
+ 
+.group-radio.warning input[type='radio'] {
+  -webkit-appearance:none;
+  width:18px;
+  height:18px;
+  border:1px solid var(--warning);
+  border-radius:50%;
+  outline:none; 
+} 
+
+.group-radio.warning input[type='radio']:checked:before {
+  background:var(--warning);
+}
+
+.group-radio.primary input[type='radio'] {
+  -webkit-appearance:none;
+  width:18px;
+  height:18px;
+  border:1px solid var(--primary);
+  border-radius:50%;
+  outline:none; 
+} 
+
+.group-radio.primary input[type='radio']:checked:before {
+  background:var(--primary);
+}
+
+.group-radio.secondary input[type='radio'] {
+  -webkit-appearance:none;
+  width:18px;
+  height:18px;
+  border:1px solid var(--secondary);
+  border-radius:50%;
+  outline:none; 
+} 
+
+.group-radio.secondary input[type='radio']:checked:before {
+  background:var(--secondary);
+}
+ 
