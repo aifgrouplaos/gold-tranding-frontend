@@ -116,7 +116,7 @@ export default function Formlogin() {
             Forgot Password
           </Link>
         </Stack>
-        <LoadingButton
+        {/* <LoadingButton
           loading={menulogin}
           type="submit"
           variant="contained"
@@ -125,7 +125,8 @@ export default function Formlogin() {
         >
           <LogoutRoundedIcon fontSize="small" />
           <span className="ml-2"> Sign In</span>
-        </LoadingButton>
+        </LoadingButton> */}
+        <input type="submit" className="btn btn-lg btn-secondary" disabled={menulogin} />
       </form>
     </Container>
   );

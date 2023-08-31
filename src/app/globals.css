@@ -786,6 +786,16 @@ main .content::-webkit-scrollbar-thumb {
   color: var(--dark);
 }
 
+input:disabled, button:disabled, select:disabled, textarea:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+input:disabled:hover, button:disabled:hover, select:disabled:hover, textarea:disabled:hover {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+
 .form-control-sm {
   line-height: 1.5em !important;
 }

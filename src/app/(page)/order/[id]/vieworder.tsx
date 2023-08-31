@@ -3,7 +3,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import ArrowBackRoundedIcon from "@mui/icons-material/ArrowBackRounded";
 import BrowserUpdatedRoundedIcon from "@mui/icons-material/BrowserUpdatedRounded";
-import DeleteForeverRoundedIcon from "@mui/icons-material/DeleteForeverRounded"; 
+import DeleteForeverRoundedIcon from "@mui/icons-material/DeleteForeverRounded";
 import EditNoteRoundedIcon from "@mui/icons-material/EditNoteRounded";
 import MultipleStopRoundedIcon from '@mui/icons-material/MultipleStopRounded';
 import Orderbalance from "./orderbalance";
@@ -59,8 +59,8 @@ export default function Vieworder() {
 
 
       <div className="col-span-12 lg:col-span-4 flex flex-col gap-3">
-        <Customerinfo/>
-        <Ordersummary/>
+        <Customerinfo />
+        <Ordersummary />
       </div>
     </div>
   );
