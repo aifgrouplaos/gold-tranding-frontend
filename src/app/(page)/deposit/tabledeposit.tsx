@@ -4,6 +4,9 @@ import BrowserUpdatedRoundedIcon from "@mui/icons-material/BrowserUpdatedRounded
 import TuneRoundedIcon from "@mui/icons-material/TuneRounded";
 import Pagination from "@/components/pagination/pagination";
 import MoreHorizRoundedIcon from "@mui/icons-material/MoreHorizRounded";
+import AddCardIcon from '@mui/icons-material/AddCard';
+import CreditScoreIcon from '@mui/icons-material/CreditScore';
+
 import Link from "next/link";
 export default function Tabledeposit() {
     const [limit, setLimit] = useState(10);
@@ -152,8 +155,13 @@ export default function Tabledeposit() {
                     <h4>Deposit/Withdraw</h4>
                 </div>
                 <div className="col-span-12 md:col-span-6 flex flex-wrap justify-end gap-2">
-                    <button className="btn btn-error">Withdraw</button>
-                    <button className="btn btn-success">Deposit</button>
+                    <Link href="/deposit/createwithdraw" className="btn btn-error">
+                        <CreditScoreIcon />
+                        Withdraw
+                    </Link>
+                    <Link  href="/deposit/createdeposit" className="btn btn-success">
+                        <AddCardIcon /> Deposit
+                    </Link>
                 </div>
             </div>
             <div className="card">
@@ -168,7 +176,7 @@ export default function Tabledeposit() {
                         </div>
                         <div className="col-span-4 lg:col-span-2">
                             <button className="btn btn-default">
-                                <TuneRoundedIcon /> Filter
+                                Filter
                             </button>
                         </div>
                         <div className="col-span-12 lg:col-span-6 lg:text-end">
@@ -207,7 +215,7 @@ export default function Tabledeposit() {
                                     <td>20/10/2023</td>
                                     <td>
                                         <Link
-                                            href="/setting/seller/1"
+                                            href="/deposit/1"
                                             className="btn btn-sm btn-default"
                                         >
                                             <MoreHorizRoundedIcon fontSize="small" />
@@ -226,7 +234,7 @@ export default function Tabledeposit() {
                                     <td>20/10/2023</td>
                                     <td>
                                         <Link
-                                            href="/setting/seller/1"
+                                            href="/deposit/1"
                                             className="btn btn-sm btn-default"
                                         >
                                             <MoreHorizRoundedIcon fontSize="small" />
@@ -245,7 +253,7 @@ export default function Tabledeposit() {
                                     <td>20/10/2023</td>
                                     <td>
                                         <Link
-                                            href="/setting/seller/1"
+                                            href="/deposit/1"
                                             className="btn btn-sm btn-default"
                                         >
                                             <MoreHorizRoundedIcon fontSize="small" />
