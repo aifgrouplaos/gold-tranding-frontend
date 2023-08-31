@@ -6,7 +6,7 @@ export default function Inputradio(
   // const attr:any=delete.props['className'];
   return (
     <label className={`group-radio ${props.color} ${props.className}`} htmlFor={props.id}>
-      <input type="radio" {...props}  className="radio" />
+      <input type="radio" {...props}  className="radio"  />
       <span>{props.title}</span>
     </label>
   );
