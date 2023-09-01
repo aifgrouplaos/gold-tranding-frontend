@@ -8,7 +8,7 @@ import ReceiptLongIcon from "@mui/icons-material/ReceiptLong";
 import PriceCheckIcon from "@mui/icons-material/PriceCheck";
 import ForwardToInboxIcon from "@mui/icons-material/ForwardToInbox";
 import MoveToInboxIcon from "@mui/icons-material/MoveToInbox";
-import Spiner from "@/components/loading/spiner";
+import Spiner from "@/components/loading/spiner"; 
 export default function page() { 
   return (
     <div>

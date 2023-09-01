@@ -1,7 +1,7 @@
-import React from 'react'
-import AccountBalanceWalletRoundedIcon from '@mui/icons-material/AccountBalanceWalletRounded';
-import ReplyAllRoundedIcon from '@mui/icons-material/ReplyAllRounded';
-import PaymentsRoundedIcon from '@mui/icons-material/PaymentsRounded';
+import Iconback from '@/icon/iconback'; 
+import Iconcardoutline from '@/icon/iconcardoutline'; 
+import Iconmoneyoutline from '@/icon/iconmoneyoutline';
+import React from 'react' 
 import {
     CircularProgressbar,
     CircularProgressbarWithChildren,
@@ -12,9 +12,9 @@ export default function Orderbalance() {
         <div className="grid grid-cols-12 bg-white rounded-lg py-3 px-5">
             <div className="col-span-12 md:col-span-6 lg:col-span-12 xl:col-span-6 px-5">
                 <div className="grid grid-cols-12 py-3 gap-5">
-                    <div className="col-span-12 flex items-center gap-2 ">
-                        <AccountBalanceWalletRoundedIcon fontSize="large" />
-                        <span className="text-xl">Position Order Balance</span>
+                    <div className="col-span-12 flex items-center gap-2 text-xl">
+                        <Iconcardoutline />
+                        <span>Position Order Balance</span>
                     </div>
                     <div className="col-span-12 sm:col-span-5 md:col-span-6 lg:col-span-5">
                         <div className="text-md">USD</div>
@@ -40,8 +40,8 @@ export default function Orderbalance() {
                 <div className="grid grid-cols-12 py-3 gap-5">
                     <div className="col-span-12">
                         <div className="flex flex-wrap justify-center gap-2">
-                            <button className="btn btn-default"><ReplyAllRoundedIcon /> Payback</button>
-                            <button className="btn btn-default"><PaymentsRoundedIcon /> Update Marning</button>
+                            <button className="btn btn-default"><Iconback /> Payback</button>
+                            <button className="btn btn-default"><Iconmoneyoutline /> Update Marning</button>
                         </div>
                     </div>
 

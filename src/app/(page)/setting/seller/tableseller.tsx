@@ -1,11 +1,11 @@
 "use client";
-import React, { useState } from "react";
-import BrowserUpdatedRoundedIcon from "@mui/icons-material/BrowserUpdatedRounded";
-import TuneRoundedIcon from "@mui/icons-material/TuneRounded";
-import Pagination from "@/components/pagination/pagination";
-import MoreHorizRoundedIcon from "@mui/icons-material/MoreHorizRounded";
+import React, { useState } from "react"; 
+import Pagination from "@/components/pagination/pagination"; 
 import Link from "next/link";
-import Createseller from "./create/createseller";
+import Createseller from "./createseller";
+import Iconmore from "@/icon/iconmore";  
+import Icondownloadoutline from "@/icon/icondownloadoutline"; 
+import Iconslidoutline from "@/icon/iconslidoutline";
 export default function Tableseller() {
   const [status, setStatus] = useState<string>("all");
   const [limit, setLimit] = useState(10);
@@ -165,12 +165,12 @@ export default function Tableseller() {
             </div>
             <div className="col-span-4 lg:col-span-2">
               <button className="btn btn-default">
-                <TuneRoundedIcon /> Filter
+                <Iconslidoutline /> Filter
               </button>
             </div>
             <div className="col-span-12 lg:col-span-6 lg:text-end">
               <button className="btn btn-default">
-                <BrowserUpdatedRoundedIcon fontSize="small" /> Download
+                <Icondownloadoutline /> Download
               </button>
             </div>
           </div>
@@ -199,7 +199,7 @@ export default function Tableseller() {
                       href="/setting/seller/1"
                       className="btn btn-sm btn-default"
                     >
-                      <MoreHorizRoundedIcon fontSize="small" />
+                      <Iconmore />
                     </Link>
                   </td>
                 </tr>
@@ -214,7 +214,7 @@ export default function Tableseller() {
                       href="/setting/seller/2"
                       className="btn btn-sm btn-default"
                     >
-                      <MoreHorizRoundedIcon fontSize="small" />
+                      <Iconmore />
                     </Link>
                   </td>
                 </tr>
@@ -229,7 +229,7 @@ export default function Tableseller() {
                       href="/setting/seller/3"
                       className="btn btn-sm btn-default"
                     >
-                      <MoreHorizRoundedIcon fontSize="small" />
+                      <Iconmore />
                     </Link>
                   </td>
                 </tr>

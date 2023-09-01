@@ -2,7 +2,11 @@
 import Pagination from "@/components/pagination/pagination";
 import Inputradio from "@/components/tools/radio/radio";
 import Switch from "@/components/tools/switch/switch";
+import Iconnotification from "@/icon/iconnotification";
+import Iconsetting from "@/icon/iconsetting";
+import Iconsettingoutline from "@/icon/iconsettingoutline";
 import React, { useState } from "react";
+import Listicon from "./listicon";
 
 export default function Listmenu() {
   const [limit, setLimit] = useState(10);
@@ -233,6 +237,7 @@ export default function Listmenu() {
           onChangepage={setcurrectpage}
         />
       </div>
+      <hr /> 
     </div>
   );
 }

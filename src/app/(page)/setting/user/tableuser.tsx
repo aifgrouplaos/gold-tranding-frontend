@@ -1,11 +1,12 @@
 "use client";
-import React, { useState } from "react";
-import BrowserUpdatedRoundedIcon from "@mui/icons-material/BrowserUpdatedRounded";
-import TuneRoundedIcon from "@mui/icons-material/TuneRounded";
+import React, { useState } from "react"; 
 import Pagination from "@/components/pagination/pagination";
-import MoreHorizRoundedIcon from "@mui/icons-material/MoreHorizRounded";
 import Link from "next/link"; 
-import Createuser from "./create/createuser";
+import Createuser from "./createuser";
+import Iconslidoutline from "@/icon/iconslidoutline";
+import Iconedit from "@/icon/iconedit";
+import Iconmore from "@/icon/iconmore";
+import Icondownloadoutline from "@/icon/icondownloadoutline";
 export default function Tableuser() {
   const [status, setStatus] = useState<string>("all");
   const [limit, setLimit] = useState(10);
@@ -271,12 +272,12 @@ export default function Tableuser() {
             </div>
             <div className="col-span-4 lg:col-span-2">
               <button className="btn btn-default">
-                <TuneRoundedIcon /> Filter
+                <Iconslidoutline /> Filter
               </button>
             </div>
             <div className="col-span-12 lg:col-span-6 lg:text-end">
               <button className="btn btn-default">
-                <BrowserUpdatedRoundedIcon fontSize="small" /> Download
+                <Icondownloadoutline/> Download
               </button>
             </div>
           </div>
@@ -310,7 +311,7 @@ export default function Tableuser() {
           </td>
           <td>
             <Link href="/setting/user/1" className="btn btn-sm btn-default">
-              <MoreHorizRoundedIcon fontSize="small" />
+              <Iconmore />
             </Link>
           </td>
         </tr>
@@ -327,7 +328,7 @@ export default function Tableuser() {
           </td>
           <td>
             <Link href="/setting/user/1" className="btn btn-sm btn-default">
-              <MoreHorizRoundedIcon fontSize="small" />
+              <Iconmore />
             </Link>
           </td>
         </tr>
@@ -344,7 +345,7 @@ export default function Tableuser() {
           </td>
           <td>
             <Link href="/setting/user/1" className="btn btn-sm btn-default">
-              <MoreHorizRoundedIcon fontSize="small" />
+              <Iconmore />
             </Link>
           </td>
         </tr>
@@ -361,7 +362,7 @@ export default function Tableuser() {
           </td>
           <td>
             <Link href="/setting/user/1" className="btn btn-sm btn-default">
-              <MoreHorizRoundedIcon fontSize="small" />
+              <Iconmore />
             </Link>
           </td>
         </tr>
@@ -378,7 +379,7 @@ export default function Tableuser() {
           </td>
           <td>
             <Link href="/setting/user/1" className="btn btn-sm btn-default">
-              <MoreHorizRoundedIcon fontSize="small" />
+              <Iconmore />
             </Link>
           </td>
         </tr>
@@ -395,7 +396,7 @@ export default function Tableuser() {
           </td>
           <td>
             <Link href="/setting/user/1" className="btn btn-sm btn-default">
-              <MoreHorizRoundedIcon fontSize="small" />
+              <Iconmore />
             </Link>
           </td>
         </tr>
@@ -412,7 +413,7 @@ export default function Tableuser() {
           </td>
           <td>
             <Link href="/setting/user/1" className="btn btn-sm btn-default">
-              <MoreHorizRoundedIcon fontSize="small" />
+              <Iconmore />
             </Link>
           </td>
         </tr>
@@ -429,7 +430,7 @@ export default function Tableuser() {
           </td>
           <td>
             <Link href="/setting/user/1" className="btn btn-sm btn-default">
-              <MoreHorizRoundedIcon fontSize="small" />
+              <Iconmore />
             </Link>
           </td>
         </tr>
@@ -446,7 +447,7 @@ export default function Tableuser() {
           </td>
           <td>
             <Link href="/setting/user/1" className="btn btn-sm btn-default">
-              <MoreHorizRoundedIcon fontSize="small" />
+              <Iconmore />
             </Link>
           </td>
         </tr>
@@ -463,7 +464,7 @@ export default function Tableuser() {
           </td>
           <td>
             <Link href="/setting/user/1" className="btn btn-sm btn-default">
-              <MoreHorizRoundedIcon fontSize="small" />
+              <Iconmore />
             </Link>
           </td>
         </tr>

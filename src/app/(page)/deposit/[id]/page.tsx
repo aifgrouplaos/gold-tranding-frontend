@@ -1,11 +1,12 @@
 import Link from 'next/link'
 import React from 'react'
 import ArrowBackRoundedIcon from "@mui/icons-material/ArrowBackRounded";
-import ListAltIcon from '@mui/icons-material/ListAlt';
-import InsertPhotoIcon from '@mui/icons-material/InsertPhoto';
-import FactCheckIcon from '@mui/icons-material/FactCheck';
+import ListAltIcon from '@mui/icons-material/ListAlt'; 
 import Customerinfo from './customerinfo';
 import Withdrawsummary from './withdrawsummary';
+import Menudeletedeposit from './deletedeposit';
+import Menuupdatedeposit from './menuupdatedeposit';
+import Icondownloadoutline from '@/icon/icondownloadoutline';
 
 export default function page() {
   return (
@@ -15,10 +16,12 @@ export default function page() {
           <Link href="/deposit" className="bg-white rounded-lg p-2">
             <ArrowBackRoundedIcon fontSize="small" />
           </Link>
-          <span className="font-bold text-xl">WD-2023-001</span>
-          <button className='btn btn-block-error'>Delete</button>
-          <button className='btn btn-default'>Edit</button>
-          <button className='btn btn-default'>Download</button>
+          <span className="font-bold text-xl">WD-2023-001</span> 
+          <Menudeletedeposit/>
+          <Menuupdatedeposit/> 
+          <button className='btn btn-default'>
+            <Icondownloadoutline/>
+            Download</button>
         </div>
       </div>
       <p className='my-5 text-grey'>Date Created : 01/01/2021 12:00:00</p>

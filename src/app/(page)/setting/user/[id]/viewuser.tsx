@@ -7,35 +7,32 @@ import DeleteForeverRoundedIcon from "@mui/icons-material/DeleteForeverRounded";
  import PhoneInTalkRoundedIcon from "@mui/icons-material/PhoneInTalkRounded";
 import Image from "next/image"; 
 import LockResetRoundedIcon from "@mui/icons-material/LockResetRounded";
-import Updateuser from "../update/updateuser";
-import Userstatus from "../status/userstatus";
-import MenuDeleteUser from "../delete/deleteuser";
+import Updateuser from "./updateuser";
+import Userstatus from "./userstatus";
+import MenuDeleteUser from "./deleteuser";
+import Icongoback from "@/icon/icongoback";
+import Icondownloadoutline from "@/icon/icondownloadoutline";
+import Iconresetpassword from "@/icon/iconresetpassword";
+import Iconphone from "@/icon/iconphone";
 export default function Viewuser() {
   const [status, setStatus] = useState(false);
   return (
     <div className="grid grid-cols-12 my-2 gap-5">
       <div className="col-span-12 lg:col-span-9 flex  flex-wrap  items-center gap-2">
         <Link href="/setting/user" className="bg-white rounded-lg p-2">
-          <ArrowBackRoundedIcon fontSize="small" />
+          <Icongoback />
         </Link>
-        <span className="font-bold text-xl">U-001</span>
-        {/* <button className="btn btn-md btn-block-success">Active</button> */}
+        <span className="font-bold text-xl">U-001</span> 
         <Userstatus/>
-        <MenuDeleteUser/>
-        {/* <button className="btn btn-md btn-block-error">
-          <DeleteForeverRoundedIcon fontSize="small" /> Delete
-        </button> */}
-        {/* <button className="btn btn-md btn-default">
-          <EditNoteRoundedIcon fontSize="small" /> Edit
-        </button> */}
+        <MenuDeleteUser/> 
         <Updateuser/>
         <button className="btn btn-md btn-default">
-          <BrowserUpdatedRoundedIcon fontSize="small" /> Download
+          <Icondownloadoutline /> Download
         </button>
       </div>
       <div className="col-span-12 lg:col-span-3 lg:text-end">
         <button className="btn btn-md btn-default">
-          <LockResetRoundedIcon fontSize="small" /> Resetpassword
+          <Iconresetpassword /> Reset Password
         </button>
       </div>
 
@@ -70,11 +67,8 @@ export default function Viewuser() {
           <div className="flex flex-col gap-2">
             <h6>Khouayue KATEEYUE</h6>
             <p className="text-grey">User No.001</p>
-            <p className="flex flex-wrap gap-1">
-              <PhoneInTalkRoundedIcon
-                fontSize="small"
-                className="text-warning"
-              />
+            <p className="flex flex-wrap items-center gap-1">
+              <span className="text-warning"><Iconphone/></span>
               020-7814-9878
             </p> 
           </div>

@@ -1,26 +1,23 @@
 "use client";
 import Link from "next/link";
 import React, { useState } from "react";
-import ArrowBackRoundedIcon from "@mui/icons-material/ArrowBackRounded";
-import BrowserUpdatedRoundedIcon from "@mui/icons-material/BrowserUpdatedRounded";
-import DeleteForeverRoundedIcon from "@mui/icons-material/DeleteForeverRounded";
-import EditNoteRoundedIcon from "@mui/icons-material/EditNoteRounded";
-import MultipleStopRoundedIcon from '@mui/icons-material/MultipleStopRounded';
-
-import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
-
 import Orderbalance from "./orderbalance";
 import Orderinfomation from "./orderinfomation";
-import Ordertransaction from "./ordertransaction";
-import ReceiptRoundedIcon from '@mui/icons-material/ReceiptRounded';
-import CurrencyExchangeRoundedIcon from '@mui/icons-material/CurrencyExchangeRounded';
+import Ordertransaction from "./ordertransaction"; 
 import Orderactivity from "./orderactivity";
 import Customerinfo from "./customerinfo";
 import Ordersummary from "./ordersummary";
 import Dialog, { DialogProps } from "@mui/material/Dialog";
 import { DialogContent, DialogContentText, DialogTitle } from "@mui/material";
-import Inputradio from "@/components/tools/radio/radio";
-import MultipleStopIcon from '@mui/icons-material/MultipleStop';
+import Inputradio from "@/components/tools/radio/radio"; 
+import Icongoback from "@/icon/icongoback";
+import Iconedit from "@/icon/iconedit";
+import Icondownloadoutline from "@/icon/icondownloadoutline";
+import Iconbilloutline from "@/icon/iconbilloutline"; 
+import Iconexchange from "@/icon/iconexchange";
+import Icontransfer from "@/icon/icontransfer";
+import Iconclose from "@/icon/iconclose";
+import Icondeleteoutline from "@/icon/icondeleteoutline";
 export default function Vieworder() {
   const [status, setStatus] = useState(false);
   const [open, setOpen] = useState(false);
@@ -38,30 +35,30 @@ export default function Vieworder() {
     <div className="grid grid-cols-12 my-2 gap-5">
       <div className="col-span-12 lg:col-span-7 flex  flex-wrap  items-center gap-2">
         <Link href="/order" className="bg-white rounded-lg p-2">
-          <ArrowBackRoundedIcon fontSize="small" />
+          <Icongoback />
         </Link>
         <span className="font-bold text-xl">U-001</span>
         <button className="btn btn-md btn-block-warning">Pending</button>
         <button className="btn btn-md btn-block-error">
-          <DeleteForeverRoundedIcon fontSize="small" /> Delete
+          <Icondeleteoutline /> Delete
         </button>
         <button className="btn btn-md btn-default">
-          <EditNoteRoundedIcon fontSize="small" /> Edit
+          <Iconedit/> Edit
         </button>
         <button className="btn btn-md btn-default">
-          <BrowserUpdatedRoundedIcon fontSize="small" /> Download
+          <Icondownloadoutline /> Download
         </button>
       </div>
       <div className="col-span-12 lg:col-span-5 flex flex-wrap gap-2 lg:text-end">
         <button className="btn btn-md btn-default">
-          <ReceiptRoundedIcon fontSize="small" /> Settlement
+          <Iconbilloutline /> Settlement
         </button>
         <button className="btn btn-md btn-default">
-          <CurrencyExchangeRoundedIcon fontSize="small" /> Cut Position
+          <Iconexchange /> Cut Position
         </button>
         <button className="btn btn-md btn-default"
           onClick={handleClickOpen("paper")}>
-          <MultipleStopRoundedIcon fontSize="small" /> Transfer
+          <Icontransfer /> Transfer
         </button>
       </div>
 
@@ -98,7 +95,7 @@ export default function Vieworder() {
               onClick={handleClose}
               className="btn btn-block-error btn-sm"
             >
-              <CloseRoundedIcon fontSize="small" />
+              <Iconclose />
             </button>
           </div>
         </DialogTitle>
@@ -156,7 +153,8 @@ export default function Vieworder() {
                 </div>
 
                 <div className="col-span-12">
-                  <button className="btn btn-block btn-md btn-warning w-[100%]"><MultipleStopIcon /> Transfer</button>
+                  <button className="btn btn-block btn-md btn-warning w-[100%]">
+                    <Icontransfer /> Transfer</button>
                 </div>
               </div>
             </form>

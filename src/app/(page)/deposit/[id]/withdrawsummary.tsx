@@ -1,11 +1,11 @@
-import React from "react";
-import ReceiptLongRoundedIcon from "@mui/icons-material/ReceiptLongRounded";
+import React from "react"; 
+import Iconinvoiceoutline from "@/icon/iconinvoiceoutline";
 export default function Withdrawsummary() {
     return (
         <div className="bg-white rounded-lg  py-3 px-5">
-            <div className="flex items-center gap-2">
-                <ReceiptLongRoundedIcon fontSize="large" />
-                <span className="text-xl">Withdraw Summary</span>
+            <div className="flex items-center gap-2 text-xl">
+                <Iconinvoiceoutline />
+                <span>Withdraw Summary</span>
             </div>
             <div className="mt-5">
                 <ul>

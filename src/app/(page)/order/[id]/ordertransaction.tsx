@@ -1,15 +1,15 @@
-import React from 'react'
-import SwapVertRoundedIcon from '@mui/icons-material/SwapVertRounded';
-import WorkHistoryRoundedIcon from '@mui/icons-material/WorkHistoryRounded';
+ import Iconcontactoutline from '@/icon/iconcontactoutline'
+import Icondowup from '@/icon/icondowup' 
+import React from 'react' 
 export default function Ordertransaction() {
   return (
     <div className="grid grid-cols-12 bg-white rounded-lg py-3 px-5 gap-5">
       <div className="col-span-12 flex flex-wrap justify-between gap-3">
-        <div className="flex items-center gap-2">
-          <WorkHistoryRoundedIcon fontSize="large" />
-          <span className="text-xl">Position Order Transaction</span>
+        <div className="flex items-center gap-2 text-xl">
+          <Iconcontactoutline />
+          <span>Position Order Transaction</span>
         </div>
-        <button className='btn btn-default'><SwapVertRoundedIcon /> Show detail</button>
+        <button className='btn btn-default'><Icondowup /> Show detail</button>
       </div>
       <div className="col-span-12">
         <div className="table-responesive">

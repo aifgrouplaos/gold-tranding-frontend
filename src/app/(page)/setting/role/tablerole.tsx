@@ -1,11 +1,12 @@
 "use client";
-import React, { useState } from "react";
-import BrowserUpdatedRoundedIcon from "@mui/icons-material/BrowserUpdatedRounded";
-import TuneRoundedIcon from "@mui/icons-material/TuneRounded";
-import Pagination from "@/components/pagination/pagination";
-import MoreHorizRoundedIcon from "@mui/icons-material/MoreHorizRounded";
+import React, { useState } from "react"; 
+import Pagination from "@/components/pagination/pagination"; 
 import Link from "next/link"; 
-import Createrole from "./create/createrole";
+import Createrole from "./createrole";
+import Iconslide from "@/icon/iconslide";
+import Iconslidoutline from "@/icon/iconslidoutline";
+import Icondownloadoutline from "@/icon/icondownloadoutline";
+import Iconmore from "@/icon/iconmore";
  export default function Tablerole() { 
   const [limit, setLimit] = useState(10);
   const [currectpage, setcurrectpage] = useState(1);
@@ -145,7 +146,6 @@ import Createrole from "./create/createrole";
     "c",
     "d",
   ];
-
   return (
     <div>
       <div className="h-[50px] flex justify-between items-center mb-2">
@@ -164,12 +164,12 @@ import Createrole from "./create/createrole";
             </div>
             <div className="col-span-4 lg:col-span-2">
               <button className="btn btn-default">
-                <TuneRoundedIcon /> Filter
+                <Iconslidoutline /> Filter
               </button>
             </div>
             <div className="col-span-12 lg:col-span-6 lg:text-end">
               <button className="btn btn-default">
-                <BrowserUpdatedRoundedIcon fontSize="small" /> Download
+                <Icondownloadoutline /> Download
               </button>
             </div>
           </div>
@@ -194,7 +194,7 @@ import Createrole from "./create/createrole";
                       href="/setting/role/1"
                       className="btn btn-sm btn-default"
                     >
-                      <MoreHorizRoundedIcon fontSize="small" />
+                      <Iconmore />
                     </Link>
                   </td>
                 </tr>
@@ -207,7 +207,7 @@ import Createrole from "./create/createrole";
                       href="/setting/role/2"
                       className="btn btn-sm btn-default"
                     >
-                      <MoreHorizRoundedIcon fontSize="small" />
+                      <Iconmore />
                     </Link>
                   </td>
                 </tr>
@@ -220,7 +220,7 @@ import Createrole from "./create/createrole";
                       href="/setting/role/3"
                       className="btn btn-sm btn-default"
                     >
-                      <MoreHorizRoundedIcon fontSize="small" />
+                      <Iconmore />
                     </Link>
                   </td>
                 </tr>

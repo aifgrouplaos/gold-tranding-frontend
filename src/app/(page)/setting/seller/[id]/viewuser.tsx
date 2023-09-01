@@ -1,33 +1,35 @@
 "use client";
 import Link from "next/link";
-import React, { useState } from "react";
-import ArrowBackRoundedIcon from "@mui/icons-material/ArrowBackRounded";
-import BrowserUpdatedRoundedIcon from "@mui/icons-material/BrowserUpdatedRounded";
-import PhoneInTalkRoundedIcon from "@mui/icons-material/PhoneInTalkRounded";
-import Image from "next/image"; 
-import LockResetRoundedIcon from "@mui/icons-material/LockResetRounded";
-import Updateseller from "../update/updateseller";
-import Sellerstatus from "../status/sellerstatus";
-import MenuDeleteseller from "../delete/sellerdelete";
-export default function Viewuser() {
-  const [status, setStatus] = useState(false);
+import React from "react"; 
+import Image from "next/image";  
+import Updateseller from "./updateseller";
+import Sellerstatus from "./sellerstatus"; 
+import Menudeleteseller from "./sellerdelete"; 
+import Iconleft from "@/icon/iconleft"; 
+import Icondownloadoutline from "@/icon/icondownloadoutline";
+import Iconphone from "@/icon/iconphone";
+import Iconback from "@/icon/iconback";
+import Iconresetpassword from "@/icon/iconresetpassword";
+import Icongoback from "@/icon/icongoback";
+export default function Viewuser() { 
   return (
     <div className="grid grid-cols-12 my-2 gap-5">
       <div className="col-span-12 lg:col-span-9 flex  flex-wrap  items-center gap-2">
         <Link href="/setting/seller" className="bg-white rounded-lg p-2">
-          <ArrowBackRoundedIcon fontSize="small" />
+          <Icongoback/>
         </Link>
         <span className="font-bold text-xl">U-001</span> 
         <Sellerstatus/>
-        <MenuDeleteseller/> 
+        <Menudeleteseller/> 
         <Updateseller/>
         <button className="btn btn-md btn-default">
-          <BrowserUpdatedRoundedIcon fontSize="small" /> Download
+        <Icondownloadoutline/> Download
         </button>
       </div>
       <div className="col-span-12 lg:col-span-3 lg:text-end">
         <button className="btn btn-md btn-default">
-          <LockResetRoundedIcon fontSize="small" /> Resetpassword
+        <Iconresetpassword/>
+        Reset Password
         </button>
       </div> 
       <div className="col-span-12 text-grey">
@@ -61,11 +63,8 @@ export default function Viewuser() {
           <div className="flex flex-col gap-2">
             <h6>Khouayue KATEEYUE</h6>
             <p className="text-grey">User No.001</p>
-            <p className="flex flex-wrap gap-1">
-              <PhoneInTalkRoundedIcon
-                fontSize="small"
-                className="text-warning"
-              />
+            <p className="flex flex-wrap items-center gap-1">
+              <span className="text-warning"><Iconphone/></span>
               020-7814-9878
             </p> 
           </div>
