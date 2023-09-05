@@ -44,7 +44,11 @@ export default function page() {
                   <td className='pt-5'>USD</td>
                 </tr>
                 <tr>
-                  <td className='pt-5 text-grey w-[30%]' >Withdraw Type</td>
+                  <td className='pt-5 text-grey w-[30%]' >Withdraw Amount</td>
+                  <td className='pt-5'>20kg</td>
+                </tr>
+                <tr>
+                  <td className='pt-5 text-grey w-[30%]' >File</td>
                   <td className='pt-5'>Transaction.pdf</td>
                 </tr>
                 <tr>

@@ -11,20 +11,16 @@ export default function Withdrawsummary() {
                 <ul>
                     <li className="flex justify-between mt-2">
                         <span className="text-grey">Withdraw Type</span>
-                        <span>-</span>
-                    </li>
-                    <li className="flex justify-between mt-2">
-                        <span className="text-grey">Price/Kg</span>
                         <span>USD</span>
-                    </li>
+                    </li> 
                     <li className="flex justify-between mt-2">
                         <span className="text-grey">Withdraw Amount</span>
-                        <span>$0</span>
+                        <span>$20</span>
                     </li> 
                     <li className="flex justify-between mt-2 border-t-2 border-grey"></li>
                     <li className="flex justify-between mt-2">
                         <span className="text-black text-bold">Total (USD) per SGB</span>
-                        <span>$0</span>
+                        <span>$20</span>
                     </li>
                 </ul>
 

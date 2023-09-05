@@ -822,6 +822,17 @@ input:disabled:hover, button:disabled:hover, select:disabled:hover, textarea:dis
   border: 2px solid var(--success);
 }
 
+.guZdik{
+  width: 100%!important;
+  min-height: 100px!important;
+  display: flex!important;
+  flex-direction: column!important;
+  justify-content: center!important;
+  align-items: center!important;
+  max-width:100%!important;
+  border: 2px dashed var(--solid)!important;
+}
+
 h1 {
   font-size: 60px;
 }

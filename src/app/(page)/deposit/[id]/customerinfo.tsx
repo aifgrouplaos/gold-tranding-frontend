@@ -1,9 +1,6 @@
 "use client";
-import React from "react";
-import PhoneInTalkRoundedIcon from "@mui/icons-material/PhoneInTalkRounded";
-import ImageRoundedIcon from '@mui/icons-material/ImageRounded';
-import Image from "next/image";
-import Iconphoto from "@/icon/iconphoto";
+import React from "react"; 
+import Image from "next/image"; 
 import Iconphone from "@/icon/iconphone";
 import Iconphotooutline from "@/icon/iconphotooutline";
 

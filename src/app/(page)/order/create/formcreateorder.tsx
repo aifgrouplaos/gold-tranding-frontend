@@ -20,8 +20,8 @@ export default function Formcreateorder() {
           <button className="btn btn-md btn-cancel">
             <Iconsaveoutline/> Save Draft
           </button>
-          <button className="btn btn-md btn-secondary">
-            <Iconaddinvoice /> Create Order
+          <button className="btn btn-md btn-success">
+            <Iconsaveoutline /> Create Order
           </button>
         </div>
       </div>
