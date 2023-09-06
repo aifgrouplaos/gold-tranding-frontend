@@ -1,7 +1,8 @@
 import React from 'react'
+import Tablecutposition from './tablecutposition'
 
 export default function page() {
   return (
-    <div>Cut Position</div>
+    <Tablecutposition />
   )
 }
