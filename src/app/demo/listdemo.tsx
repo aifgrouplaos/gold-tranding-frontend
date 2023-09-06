@@ -2,14 +2,13 @@
 import Pagination from "@/components/pagination/pagination";
 import Inputradio from "@/components/tools/radio/radio";
 import Switch from "@/components/tools/switch/switch";
-import Iconnotification from "@/icon/iconnotification";
-import Iconsetting from "@/icon/iconsetting";
-import Iconsettingoutline from "@/icon/iconsettingoutline";
+import CurrencyInput from 'react-currency-input-field';
 import React, { useState } from "react";
-import Listicon from "./listicon";
+import { FileUploader } from "react-drag-drop-files";
 
 export default function Listmenu() {
   const [limit, setLimit] = useState(10);
+   
   const [status, setStatus] = useState(true);
   const [currectpage, setcurrectpage] = useState(1);
   const data = [
@@ -41,7 +40,7 @@ export default function Listmenu() {
     "z",
   ];
   return (
-    <div className="p-4"> 
+    <div className="p-4 bg-white">
       <h4>List menu</h4>
       <div className="group-menu">
         <button
@@ -140,6 +139,32 @@ export default function Listmenu() {
       </div>
 
       <div className="mt-3">
+        <h4>Input updateload file</h4>
+        <label htmlFor="">Upload file</label>
+        <input type="file" className="form-control" />
+        <hr className="my-3" />
+        <label>Drag and Drop File / Upload file</label>
+        <FileUploader handleChange={(file: any) => {
+          console.log(file); 
+        }} label="Drag and Drop files, or Upload: " onSelect={(file: any) => {
+          console.log(file); 
+        }} name="file" types={['jpeg', 'jpg', 'png', 'gif']} />
+      </div>
+
+      <div className="mt-3">
+        <h4>List Textfield Number Format</h4>
+        <CurrencyInput
+          id="input-example"
+          name="input-name"
+          className="form-control"
+          placeholder="Please enter a number"
+          defaultValue={1000000}
+          decimalsLimit={2}
+          onValueChange={(value, name) => console.log(value, name)}
+        />
+      </div>
+
+      <div className="mt-3">
         <h4>List Textfield</h4>
         <label htmlFor="">text field Default</label>
         <input type="text" className="form-control" />
@@ -158,34 +183,60 @@ export default function Listmenu() {
       <div className="mt-3">
         <h4>List menu Radio</h4>
         <Inputradio
+        className="mt-2"
           id="label1"
           name="status"
           title="laos"
-          color="primary"
-        />
+          value="lao"
+          color="primary"  
+          />
         <Inputradio
+        className="mt-2"
           id="label2"
           name="status"
+          value="thailand"
           title="thailand"
           color="secondary"
         />
         <Inputradio
+        className="mt-2"
           id="label3"
           name="status"
           title="Japan"
+          value="japan"
           color="warning"
         />
         <Inputradio
+        className="mt-2"
           id="label4"
           name="status"
+          value="korea"
           title="Korea"
           color="success"
         />
         <Inputradio
+        className="mt-2"
           id="label5"
           name="status"
+          value="vietnam"
           title="Vietnam"
           color="error"
+        />
+        <Inputradio
+        className="mt-2"
+          id="label6"
+          name="status"
+          value="cambodian"
+          title="cambodian"
+          color="secondary"
+        />
+        <Inputradio
+        className="mt-2"
+          id="label7"
+          name="status"
+          value="english"
+          title="english"
+          color="info"
         />
       </div>
       <div>
@@ -193,35 +244,35 @@ export default function Listmenu() {
 
         <Switch
           name="status"
-          checked={status}
+          defaultChecked={status}
           onClick={() => setStatus(!status)}
           color="default"
         />
         <span>Default</span>
         <Switch
           name="status"
-          checked={status}
+          defaultChecked={status}
           onClick={() => setStatus(!status)}
           color="primary"
         />
         <span>Primary</span>
         <Switch
           name="status"
-          checked={status}
+          defaultChecked={status}
           onClick={() => setStatus(!status)}
           color="error"
         />
         <span>Error</span>
         <Switch
           name="status"
-          checked={status}
+          defaultChecked={status}
           onClick={() => setStatus(!status)}
           color="warning"
         />
         <span>Warning</span>
         <Switch
           name="status"
-          checked={status}
+          defaultChecked={status}
           onClick={() => setStatus(!status)}
           color="success"
         />
@@ -237,7 +288,7 @@ export default function Listmenu() {
           onChangepage={setcurrectpage}
         />
       </div>
-      <hr /> 
+      <hr />
     </div>
   );
 }

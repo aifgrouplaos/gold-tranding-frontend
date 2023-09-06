@@ -14,6 +14,8 @@ import Iconchange from '@/icon/iconchange'
 import Iconchangeoutline from '@/icon/iconchangeoutline'
 import Iconcheck from '@/icon/iconcheck'
 import Iconcheckoutline from '@/icon/iconcheckoutline'
+import Iconcircle from '@/icon/iconcircle'
+import Iconcirclecheck from '@/icon/iconcirclecheck'
 import Iconcode from '@/icon/iconcode'
 import Iconcomputer from '@/icon/iconcomputer'
 import Iconcontact from '@/icon/iconcontact'
@@ -452,6 +454,14 @@ export default function Listicon() {
         <div className="border border-grey p-1 flex flex-col items-center gap-1">
           <Iconmoreoutline/>
           <b>Iconmoreoutline</b>
+        </div>
+        <div className="border border-grey p-1 flex flex-col items-center gap-1">
+          <Iconcircle/>
+          <b>Iconcircle</b>
+        </div>
+        <div className="border border-grey p-1 flex flex-col items-center gap-1">
+          <Iconcirclecheck/>
+          <b>Iconcirclecheck</b>
         </div>
 
         <div className="border border-grey p-1 flex flex-col items-center gap-1">

@@ -1,12 +1,13 @@
 import Link from 'next/link'
-import React from 'react'
-import ArrowBackRoundedIcon from "@mui/icons-material/ArrowBackRounded";
+import React from 'react' 
 import ListAltIcon from '@mui/icons-material/ListAlt'; 
 import Customerinfo from './customerinfo';
 import Withdrawsummary from './withdrawsummary';
 import Menudeletedeposit from './deletedeposit';
 import Menuupdatedeposit from './menuupdatedeposit';
 import Icondownloadoutline from '@/icon/icondownloadoutline';
+import Icongoback from '@/icon/icongoback';
+import Iconbook from '@/icon/iconbook';
 
 export default function page() {
   return (
@@ -14,7 +15,7 @@ export default function page() {
       <div className="grid grid-cols-12 gap-2 mt-2">
         <div className="col-span-12 flex flex-wrap gap-2 items-center">
           <Link href="/deposit" className="bg-white rounded-lg p-2">
-            <ArrowBackRoundedIcon fontSize="small" />
+            <Icongoback />
           </Link>
           <span className="font-bold text-xl">WD-2023-001</span> 
           <Menudeletedeposit/>
@@ -28,9 +29,9 @@ export default function page() {
       <div className="grid grid-cols-12 gap-5 mt-4">
         <div className="col-span-12 lg:col-span-7 xl:col-span-8">
           <div className="bg-white rounded-lg px-5 py-3">
-            <div className="flex flex-wrap items-center gap-2">
-              <ListAltIcon fontSize='large' />
-              <span className='text-xl'>Withdraw Detail</span>
+            <div className="flex flex-wrap items-center gap-2 text-xl">
+              <Iconbook />
+              <span>Withdraw Detail</span>
             </div>
 
             <table>

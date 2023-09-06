@@ -8,8 +8,9 @@ import ReceiptLongIcon from "@mui/icons-material/ReceiptLong";
 import PriceCheckIcon from "@mui/icons-material/PriceCheck";
 import ForwardToInboxIcon from "@mui/icons-material/ForwardToInbox";
 import MoveToInboxIcon from "@mui/icons-material/MoveToInbox";
-import Spiner from "@/components/loading/spiner"; 
-export default function page() { 
+import Spiner from "@/components/loading/spiner";
+import CurrencyInput from 'react-currency-input-field';
+export default function page() {
   return (
     <div>
       <h3>Dashboard</h3>
@@ -20,6 +21,16 @@ export default function page() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quis ut
             similique doloremque ea aliquam optio repellat officia hic enim
             corrupti ab dolore eos, ipsum a adipisci sunt nesciunt numquam!
+            <hr />
+            <CurrencyInput
+              id="input-example"
+              name="input-name"
+              className="form-control"
+              placeholder="Please enter a number"
+              defaultValue={1000}
+              decimalsLimit={2}
+              onValueChange={(value, name) => console.log(value, name)}
+            />
           </p>
         </Paper>
         <Paper className="col-span-6 md:col-span-4 lg:col-span-3 p-3">

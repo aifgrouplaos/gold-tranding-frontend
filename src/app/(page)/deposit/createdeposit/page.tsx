@@ -2,7 +2,7 @@ import Icongoback from '@/icon/icongoback'
 import Link from 'next/link'
 import React from 'react'
 import Formcreatedeposit from './formcreatedeposit'    
-import Depositsummary from './depositsummary'
+import Depositsummary from '../../settlement/create/settlementsummary'
 import Iconsaveoutline from '@/icon/iconsaveoutline'
 
 export default function page() {

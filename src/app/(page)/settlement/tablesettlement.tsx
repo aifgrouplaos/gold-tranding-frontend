@@ -2,9 +2,7 @@
     "use client";
     import React, { useState } from "react";
     import Pagination from "@/components/pagination/pagination";    
-    import Link from "next/link";
-    import Iconcheckinvoice from "@/icon/iconcheckinvoice";
-    import Iconaddinvoice from "@/icon/iconaddinvoice";
+    import Link from "next/link"; 
     import Icondownloadoutline from "@/icon/icondownloadoutline";
     import Iconmore from "@/icon/iconmore";
     import Iconslidoutline from "@/icon/iconslidoutline";
@@ -156,7 +154,7 @@ import Iconadd from "@/icon/iconadd";
                         <h4>Settlement</h4>
                     </div>
                     <div className="col-span-12 md:col-span-6 flex flex-wrap justify-end gap-2">
-                        <Link href="/deposit/createwithdraw" className="btn btn-secondary">
+                        <Link href="/settlement/create" className="btn btn-secondary">
                             <Iconadd />
                             Create Settlement
                         </Link> 
@@ -216,7 +214,7 @@ import Iconadd from "@/icon/iconadd";
                                         <td>20/10/2023</td>
                                         <td>
                                             <Link
-                                                href="/deposit/1"
+                                                href="/settlement/1"
                                                 className="btn btn-sm btn-default"
                                             >
                                                 <Iconmore/>
@@ -236,7 +234,7 @@ import Iconadd from "@/icon/iconadd";
                                         <td>20/10/2023</td>
                                         <td>
                                             <Link
-                                                href="/deposit/1"
+                                                href="/settlement/1"
                                                 className="btn btn-sm btn-default"
                                             >
                                                 <Iconmore/>
@@ -256,7 +254,7 @@ import Iconadd from "@/icon/iconadd";
                                         <td>20/10/2023</td>
                                         <td>
                                             <Link
-                                                href="/deposit/1"
+                                                href="/settlement/1"
                                                 className="btn btn-sm btn-default"
                                             >
                                                 <Iconmore/>
