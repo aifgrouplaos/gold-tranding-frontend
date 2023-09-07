@@ -147,7 +147,6 @@ export default function Tablecutposition() {
         "c",
         "d",
     ];
-
     return (
         <div>
             <div className="grid grid-cols-12 mb-4">
@@ -155,12 +154,12 @@ export default function Tablecutposition() {
                     <h4>Cut Position</h4>
                 </div>
                 <div className="col-span-12 md:col-span-6 flex flex-wrap justify-end gap-2">
-                    <Link href="/settlement/create" className="btn btn-secondary">
-                        <Iconadd />
-                        Create Cut Position
+                    <Link href="/cutposition/create" className="btn btn-secondary">
+                        <Iconadd /> <span>Create Cut Position</span>
                     </Link>
                 </div>
             </div>
+            
             <div className="card">
                 <div className="card-body">
                     <div className="grid grid-cols-12 my-5 gap-2">
@@ -198,7 +197,7 @@ export default function Tablecutposition() {
                                     <th>Total Amount</th>
                                     <th>Benefit</th>
                                     <th>Status</th>
-                                    <th>Date Created</th> 
+                                    <th>Date Created</th>
                                     <th style={{ width: "100px" }}>Action</th>
                                 </tr>
                             </thead>
@@ -278,7 +277,7 @@ export default function Tablecutposition() {
                                         </Link>
                                     </td>
                                 </tr>
-                                 
+
 
                             </tbody>
                         </table>

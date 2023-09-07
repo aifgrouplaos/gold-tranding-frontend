@@ -1,6 +1,6 @@
 "use client";
-import React, { useState } from "react"; 
-import Pagination from "@/components/pagination/pagination"; 
+import React, { useState } from "react";
+import Pagination from "@/components/pagination/pagination";
 import Link from "next/link";
 import Iconadd from "@/icon/iconadd";
 import Iconslidoutline from "@/icon/iconslidoutline";
@@ -223,12 +223,17 @@ export default function Tableorder() {
 
   return (
     <div>
-      <div className="h-[50px] flex justify-between items-center mb-2">
-        <h4>Position Order</h4>
-        <Link href="/order/create" color="secondary" className="btn btn-secondary">
-          <Iconadd /> Create New Order 
-        </Link>
+      <div className="grid grid-cols-12 mb-4">
+        <div className="col-span-12 md:col-span-6">
+          <h4>Position Order</h4>
+        </div>
+        <div className="col-span-12 md:col-span-6 flex flex-wrap justify-end gap-2">
+          <Link href="/order/create" className="btn btn-secondary">
+            <Iconadd /> <span>Create New Order</span>
+          </Link>
+        </div>
       </div>
+
       <div className="card">
         <div className="card-header px-3">
           <ul className="tab">
@@ -258,7 +263,7 @@ export default function Tableorder() {
                 Pending <div className="badge-secondary">5</div>
               </div>
             </li>
-        
+
             <li
               className={`tab-item ${status === "transfer" ? "active" : ""}`}
               onClick={() => setStatus("transfer")}
@@ -295,7 +300,7 @@ export default function Tableorder() {
             </div>
             <div className="col-span-12 lg:col-span-6 lg:text-end">
               <button className="btn btn-default">
-                <Icondownloadoutline/> Download
+                <Icondownloadoutline /> Download
               </button>
             </div>
           </div>
@@ -332,7 +337,7 @@ export default function Tableorder() {
                       href="/order/1"
                       className="btn btn-sm btn-default"
                     >
-                      <Iconmore/>
+                      <Iconmore />
                     </Link>
                   </td>
                 </tr>
@@ -352,7 +357,7 @@ export default function Tableorder() {
                       href="/order/1"
                       className="btn btn-sm btn-default"
                     >
-                      <Iconmore/>
+                      <Iconmore />
                     </Link>
                   </td>
                 </tr>
@@ -372,7 +377,7 @@ export default function Tableorder() {
                       href="/order/1"
                       className="btn btn-sm btn-default"
                     >
-                      <Iconmore/>
+                      <Iconmore />
                     </Link>
                   </td>
                 </tr>
@@ -392,7 +397,7 @@ export default function Tableorder() {
                       href="/order/1"
                       className="btn btn-sm btn-default"
                     >
-                      <Iconmore/>
+                      <Iconmore />
                     </Link>
                   </td>
                 </tr>
@@ -412,7 +417,7 @@ export default function Tableorder() {
                       href="/order/1"
                       className="btn btn-sm btn-default"
                     >
-                      <Iconmore/>
+                      <Iconmore />
                     </Link>
                   </td>
                 </tr>
@@ -432,7 +437,7 @@ export default function Tableorder() {
                       href="/order/1"
                       className="btn btn-sm btn-default"
                     >
-                      <Iconmore/>
+                      <Iconmore />
                     </Link>
                   </td>
                 </tr>
@@ -452,7 +457,7 @@ export default function Tableorder() {
                       href="/order/1"
                       className="btn btn-sm btn-default"
                     >
-                      <Iconmore/>
+                      <Iconmore />
                     </Link>
                   </td>
                 </tr>
@@ -472,7 +477,7 @@ export default function Tableorder() {
                       href="/order/1"
                       className="btn btn-sm btn-default"
                     >
-                      <Iconmore/>
+                      <Iconmore />
                     </Link>
                   </td>
                 </tr>
@@ -492,7 +497,7 @@ export default function Tableorder() {
                       href="/order/1"
                       className="btn btn-sm btn-default"
                     >
-                      <Iconmore/>
+                      <Iconmore />
                     </Link>
                   </td>
                 </tr>
@@ -512,7 +517,7 @@ export default function Tableorder() {
                       href="/order/1"
                       className="btn btn-sm btn-default"
                     >
-                      <Iconmore/>
+                      <Iconmore />
                     </Link>
                   </td>
                 </tr>

@@ -62,9 +62,10 @@ export default function Vieworder() {
         </button>
       </div>
 
-      <div className="col-span-12 text-grey">
-        Date Created : 01/01/2021 12:00:00
-      </div>
+      
+      <div className="col-span-12">
+        <div className="text-grey">Date Created 25 July 2023 at 04:34 PM</div>
+      </div> 
 
       <div className="col-span-12 lg:col-span-8 flex flex-col gap-3 ">
         <Orderbalance />
