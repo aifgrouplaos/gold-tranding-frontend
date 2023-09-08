@@ -828,7 +828,10 @@ textarea:disabled:hover {
   border: 2px solid var(--success);
 }
 
-.guZdik {
+.sc-aXZVg,
+.guZdik,
+.dtlKip,
+.form-drag-drop {
   width: 100% !important;
   min-height: 100px !important;
   display: flex !important;
@@ -837,6 +840,16 @@ textarea:disabled:hover {
   align-items: center !important;
   max-width: 100% !important;
   border: 2px dashed var(--solid) !important;
+}
+
+.guZdik input[type="file"] {
+  visibility: hidden;
+}
+.dtlKip input[type="file"] {
+  visibility: hidden;
+}
+.form-drag-drop input[type="file"] {
+  visibility: hidden;
 }
 
 h1 {
@@ -1149,16 +1162,21 @@ input:checked + .slider:before {
 
 .modal .modal-content {
   background-color: white;
-  /* border-radius: 5px; */
+  border-radius: 5px;
+  padding: 0px 15px 15px 15px;
   min-width: 300px;
   max-width: 600px;
   min-height: 50px;
   max-height: 90vh;
   overflow-x: hidden;
   overflow-y: auto;
-  /* padding: 15px 10px; */
   text-align: start;
   position: relative;
+}
+.modal .modal-content .modal-body {
+  /* overflow-x: hidden;
+  overflow-y: auto;  */
+  text-align: start;
 }
 
 .modal .modal-content .modal-header {

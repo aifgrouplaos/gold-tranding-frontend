@@ -1,12 +1,7 @@
 "use client";
 import Link from "next/link";
-import React, { useState } from "react";
-import ArrowBackRoundedIcon from "@mui/icons-material/ArrowBackRounded";
-import BrowserUpdatedRoundedIcon from "@mui/icons-material/BrowserUpdatedRounded";
-import DeleteForeverRoundedIcon from "@mui/icons-material/DeleteForeverRounded";
- import PhoneInTalkRoundedIcon from "@mui/icons-material/PhoneInTalkRounded";
-import Image from "next/image"; 
-import LockResetRoundedIcon from "@mui/icons-material/LockResetRounded";
+import React, { useState } from "react"; 
+import Image from "next/image";  
 import Updateuser from "./updateuser";
 import Userstatus from "./userstatus";
 import MenuDeleteUser from "./deleteuser";
@@ -14,6 +9,9 @@ import Icongoback from "@/icon/icongoback";
 import Icondownloadoutline from "@/icon/icondownloadoutline";
 import Iconresetpassword from "@/icon/iconresetpassword";
 import Iconphone from "@/icon/iconphone";
+import Menudeleteuser from "./deleteuser"; 
+import Menuupdateuser from "./updateuser";
+import Menustatususer from "./userstatus";
 export default function Viewuser() {
   const [status, setStatus] = useState(false);
   return (
@@ -23,9 +21,9 @@ export default function Viewuser() {
           <Icongoback />
         </Link>
         <span className="font-bold text-xl">U-001</span> 
-        <Userstatus/>
-        <MenuDeleteUser/> 
-        <Updateuser/>
+        <Menustatususer/>
+        <Menudeleteuser/> 
+        <Menuupdateuser/>
         <button className="btn btn-md btn-default">
           <Icondownloadoutline /> Download
         </button>

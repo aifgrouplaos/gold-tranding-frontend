@@ -48,7 +48,7 @@ export default function Depositinfomation() {
 
                 <div className="col-span-12">
                     <label>Upload file</label>
-                    <FileUploader handleChange={handleChange} label="Drag and Drop files, or Upload: " onSelect={handleChange} name="file" types={fileTypes} />
+                    <FileUploader handleChange={handleChange} label="Drag and Drop files, or Upload: " onSelect={handleChange} name="file" types={fileTypes} classes="form-drag-drop" />
                 </div>
 
                 <div className="col-span-12">

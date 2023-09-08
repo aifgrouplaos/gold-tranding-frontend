@@ -1,12 +1,11 @@
 "use client";
 import React, { useState } from "react"; 
 import Pagination from "@/components/pagination/pagination"; 
-import Link from "next/link"; 
-import Createrole from "./createrole";
-import Iconslide from "@/icon/iconslide";
+import Link from "next/link";  
 import Iconslidoutline from "@/icon/iconslidoutline";
 import Icondownloadoutline from "@/icon/icondownloadoutline";
 import Iconmore from "@/icon/iconmore";
+import Menucreaterole from "./createrole";
  export default function Tablerole() { 
   const [limit, setLimit] = useState(10);
   const [currectpage, setcurrectpage] = useState(1);
@@ -150,7 +149,7 @@ import Iconmore from "@/icon/iconmore";
     <div>
       <div className="h-[50px] flex justify-between items-center mb-2">
         <h4>Manage Role</h4>
-        <Createrole />
+        <Menucreaterole />
       </div>
       <div className="card">
         <div className="card-body">

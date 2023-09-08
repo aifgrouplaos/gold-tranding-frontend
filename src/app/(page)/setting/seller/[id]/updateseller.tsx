@@ -1,66 +1,36 @@
-"use client";
-import {
-  Dialog,
-  DialogContent,
-  DialogContentText,
-  DialogProps,
-  DialogTitle,
-} from "@mui/material";
-import React, { useState } from "react"; 
-import Image from "next/image";
+"use client"; 
 import Iconclose from "@/icon/iconclose";
-import Iconsave from "@/icon/iconsave";
 import Icondownloadoutline from "@/icon/icondownloadoutline";
-import Iconedit from "@/icon/iconedit";
+import Iconeditoutline from "@/icon/iconeditoutline"; 
+import Iconsave from "@/icon/iconsave";
+import Image from "next/image";
+import React, { useState } from "react";
 
-export default function Updateseller() {
-  const [status, setStatus] = useState(false);
+export default function Menuupdateseller() {
   const [open, setOpen] = useState(false);
-  const [scroll, setScroll] = useState<DialogProps["scroll"]>("paper");
-  const handleClickOpen = (scrollType: DialogProps["scroll"]) => () => {
-    setOpen(true);
-    setScroll(scrollType);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
-  };
-  const descriptionElementRef = React.useRef<HTMLElement>(null);
-
+  const handleClose = () => { setOpen(false) };
   return (
     <>
       <button
         type="button"
+        color="secondary"
         className="btn btn-md btn-default"
-        onClick={handleClickOpen("paper")}
+        onClick={() => setOpen(true)}
       >
-        <Iconedit/> Update
+        <Iconeditoutline />
+        <span>Delete</span>
       </button>
-
-      <Dialog
-        open={open}
-        onClose={handleClose}
-        scroll={scroll}
-        aria-labelledby="scroll-dialog-title"
-        aria-describedby="scroll-dialog-description"
-      >
-        <DialogTitle id="scroll-dialog-title">
-          <div className="flex gap-5 justify-between">
-            <b>Update Seller</b>
+      <div className={`modal ${open ? "show" : "hide"}`}>
+        <div className="modal-content">
+          <div className="modal-header flex justify-between items-center py-5">
+            <h5 className="modal-title">Update Seller</h5>
             <button
+              type="button"
+              className="btn-error btn-sm btn"
               onClick={handleClose}
-              className="btn btn-block-error btn-sm"
-            >
-              <Iconclose />
-            </button>
-          </div>
-        </DialogTitle>
-        <DialogContent dividers={scroll === "paper"} sx={{ width: "400px" }}>
-          <DialogContentText
-            id="scroll-dialog-description"
-            ref={descriptionElementRef}
-            tabIndex={-1}
-          >
+            ><Iconclose/></button>
+            </div>
+          <div className="modal-body">
             <div className="grid grid-cols-12 gap-2">
               <div className="col-span-12 flex items-center gap-3">
                 <Image
@@ -71,9 +41,9 @@ export default function Updateseller() {
                   className="rounded shadow"
                 />
                 <button className="btn btn-default">
-                  <Icondownloadoutline/>
+                  <Icondownloadoutline />
                   Upload
-                  </button>
+                </button>
               </div>
               <div className="col-span-12">
                 <b>Seller Name</b>
@@ -99,9 +69,9 @@ export default function Updateseller() {
                 </button>
               </div>
             </div>
-          </DialogContentText>
-        </DialogContent>
-      </Dialog>
+          </div>
+        </div>
+      </div>
     </>
   );
 }

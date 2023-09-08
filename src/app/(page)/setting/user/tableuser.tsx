@@ -7,6 +7,7 @@ import Iconslidoutline from "@/icon/iconslidoutline";
 import Iconedit from "@/icon/iconedit";
 import Iconmore from "@/icon/iconmore";
 import Icondownloadoutline from "@/icon/icondownloadoutline";
+import Menucreateuser from "./createuser";
 export default function Tableuser() {
   const [status, setStatus] = useState<string>("all");
   const [limit, setLimit] = useState(10);
@@ -220,14 +221,12 @@ export default function Tableuser() {
     "x",
     "y",
     "z",
-  ];
-
+  ]; 
   return (
     <div>
       <div className="h-[50px] flex justify-between items-center mb-2">
-        <h4>Manage User</h4>
-        
-        <Createuser/>
+        <h4>Manage User</h4> 
+        <Menucreateuser/>
       </div>
       <div className="card">
         <div className="card-header px-3">

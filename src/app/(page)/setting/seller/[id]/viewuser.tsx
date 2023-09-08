@@ -2,15 +2,13 @@
 import Link from "next/link";
 import React from "react"; 
 import Image from "next/image";  
-import Updateseller from "./updateseller";
 import Sellerstatus from "./sellerstatus"; 
-import Menudeleteseller from "./sellerdelete"; 
-import Iconleft from "@/icon/iconleft"; 
+import Menudeleteseller from "./sellerdelete";  
 import Icondownloadoutline from "@/icon/icondownloadoutline";
-import Iconphone from "@/icon/iconphone";
-import Iconback from "@/icon/iconback";
+import Iconphone from "@/icon/iconphone"; 
 import Iconresetpassword from "@/icon/iconresetpassword";
 import Icongoback from "@/icon/icongoback";
+import Menuupdateseller from "./updateseller";
 export default function Viewuser() { 
   return (
     <div className="grid grid-cols-12 my-2 gap-5">
@@ -21,7 +19,7 @@ export default function Viewuser() {
         <span className="font-bold text-xl">U-001</span> 
         <Sellerstatus/>
         <Menudeleteseller/> 
-        <Updateseller/>
+        <Menuupdateseller/>
         <button className="btn btn-md btn-default">
         <Icondownloadoutline/> Download
         </button>
