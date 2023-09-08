@@ -225,12 +225,7 @@ export default function Tablephysicalgold() {
       <div className="grid grid-cols-12 mb-4">
         <div className="col-span-12 md:col-span-6">
           <h4>Physical Gold</h4>
-        </div>
-        {/* <div className="col-span-12 md:col-span-6 flex flex-wrap justify-end gap-2">
-          <Link href="/order/create" className="btn btn-secondary">
-            <Iconadd /> <span>Create New Order</span>
-          </Link>
-        </div> */}
+        </div> 
       </div>
       <div className="card">
         <div className="card-header px-3">
@@ -327,7 +322,7 @@ export default function Tablephysicalgold() {
                   <td>25/07/2023</td>
                   <td>
                     <Link
-                      href="/order/1"
+                      href="/phycicalgold/1"
                       className="btn btn-sm btn-default"
                     >
                       <Iconmore />
@@ -349,7 +344,7 @@ export default function Tablephysicalgold() {
                   <td>25/07/2023</td>
                   <td>
                     <Link
-                      href="/order/1"
+                      href="/phycicalgold/1"
                       className="btn btn-sm btn-default"
                     >
                       <Iconmore />
@@ -371,7 +366,7 @@ export default function Tablephysicalgold() {
                   <td>25/07/2023</td>
                   <td>
                     <Link
-                      href="/order/1"
+                      href="/phycicalgold/1"
                       className="btn btn-sm btn-default"
                     >
                       <Iconmore />
