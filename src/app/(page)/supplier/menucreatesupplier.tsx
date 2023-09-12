@@ -9,7 +9,7 @@ export default function Menucreatesupplier() {
   const [isopen, setisopen] = useState(false)
   return (
     <>
-      <button className='btn btn-warning' onClick={() => setisopen(!isopen)}>
+      <button className='btn btn-secondary' onClick={() => setisopen(!isopen)}>
         <Iconadd />
         Create Supplier</button>
 
@@ -55,7 +55,7 @@ export default function Menucreatesupplier() {
                 </div>
               </div>
               <div className="col-span-12">
-                <button className='btn btn-warning w-full'>
+                <button className='btn btn-secondary w-full'>
                   <Iconsaveoutline /> Create
                 </button>
               </div>

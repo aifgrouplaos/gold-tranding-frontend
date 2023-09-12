@@ -1,11 +1,9 @@
 "use client";
 import { ILoginResponse } from "@/types/datetype";
 import { Visibility, VisibilityOff } from "@mui/icons-material";
-import { useRouter } from "next/navigation";
-import LoadingButton from "@mui/lab/LoadingButton";
+import { useRouter } from "next/navigation"; 
 import PermIdentityIcon from "@mui/icons-material/PermIdentity";
-import LockOpenIcon from "@mui/icons-material/LockOpen";
-import LogoutRoundedIcon from "@mui/icons-material/LogoutRounded";
+import LockOpenIcon from "@mui/icons-material/LockOpen"; 
 import {
   TextField,
   Container,
@@ -31,28 +29,29 @@ export default function Formlogin() {
   };
   const login = async (e: any) => {
     e.preventDefault();
-    // console.log(JSON.stringify(formlogin));
     setMenulogin(true);
-    try {
-      ("use server");
-      const api = await fetch(process.env.NEXT_PUBLIC_URL + EAuth.login, {
-        method: "post",
-        body: JSON.stringify(formlogin),
-        headers: { "Content-Type": "application/json" },
-      });
-      const data: ILoginResponse = await api.json();
-      if (data.success) {
-        toast.success(data.message);
-        SetLocalstorage(data);
-        rounter.push("/dashboard");
-      } else {
-        setMenulogin(false);
-        toast.error(data.message);
-      }
-    } catch (error) {
-      setMenulogin(false);
-      toast.error("ກາລຸນາກວດເບີ່ງ Nextwork");
-    }
+    rounter.push("/dashboard");
+    // console.log(JSON.stringify(formlogin));
+    // try {
+    //   ("use server");
+    //   const api = await fetch(process.env.NEXT_PUBLIC_URL + EAuth.login, {
+    //     method: "post",
+    //     body: JSON.stringify(formlogin),
+    //     headers: { "Content-Type": "application/json" },
+    //   });
+    //   const data: ILoginResponse = await api.json();
+    //   if (data.success) {
+    //     toast.success(data.message);
+    //     SetLocalstorage(data);
+    //     rounter.push("/dashboard");
+    //   } else {
+    //     setMenulogin(false);
+    //     toast.error(data.message);
+    //   }
+    // } catch (error) {
+    //   setMenulogin(false);
+    //   toast.error("ກາລຸນາກວດເບີ່ງ Nextwork");
+    // }
   };
 
   return (

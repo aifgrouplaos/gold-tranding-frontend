@@ -17,7 +17,7 @@ export default function Menucreateuser() {
     <>
       <button
         type="button"
-        className="btn btn-md btn-warning"
+        className="btn btn-md btn-secondary"
         onClick={() => setOpen(true)}
       >
         <Iconadd /> Create New User

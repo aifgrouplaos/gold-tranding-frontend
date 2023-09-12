@@ -34,7 +34,7 @@ export default function Updatedelivery() {
                                 <textarea className='form-control' name="remark" id="" cols={30} rows={3} placeholder='Enter Message...'></textarea>
                             </div>
                             <div className="col-span-12 mt-3">
-                                <button className='btn btn-warning w-full ' onClick={() => setismodal(!ismodal)}>
+                                <button className='btn btn-secondary w-full ' onClick={() => setismodal(!ismodal)}>
                                     <Iconcheckinvoice />
                                     Update
                                 </button>

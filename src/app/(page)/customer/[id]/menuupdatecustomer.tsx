@@ -60,7 +60,7 @@ export default function Menuupdatecustomer() {
                 </div>
               </div>
               <div className="col-span-12">
-                <button className='btn btn-warning w-full'>
+                <button className='btn btn-secondary w-full'>
                   <Iconsaveoutline /> Create
                 </button>
               </div>

@@ -50,7 +50,7 @@ export default function Listmenu() {
         >
           primary
         </button>
-        <button type="button" color="secondary" className="btn btn-warning">
+        <button type="button" color="secondary" className="btn btn-secondary">
           warning
         </button>
         <button type="button" color="secondary" className="btn btn-error">

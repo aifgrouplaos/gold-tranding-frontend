@@ -13,7 +13,7 @@ export default function Menucreatecustomer() {
     <>
       <button
         type="button"
-        className="btn btn-md btn-warning"
+        className="btn btn-md btn-secondary"
         onClick={() => setOpen(true)}
       >
         <Iconadd /> Create new Customer
@@ -61,7 +61,7 @@ export default function Menucreatecustomer() {
                 </div>
               </div>
               <div className="col-span-12">
-                <button className='btn btn-warning w-full'>
+                <button className='btn btn-secondary w-full'>
                   <Iconsaveoutline /> Save
                 </button>
               </div>
