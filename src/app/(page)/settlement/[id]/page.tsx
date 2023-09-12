@@ -3,15 +3,12 @@ import Link from 'next/link'
 import Icongoback from '@/icon/icongoback'
 import Icondownloadoutline from '@/icon/icondownloadoutline'
 import Iconedit from '@/icon/iconedit'
-import Icondeleteoutline from '@/icon/icondeleteoutline'
-import Iconbookoutline from '@/icon/iconbookoutline'
-import Iconslide from '@/icon/iconslide'
-import Iconup from '@/icon/iconup'
-import Icondowup from '@/icon/icondowup'
+import Icondeleteoutline from '@/icon/icondeleteoutline' 
 import Positionorderinformation from './positionorderinformation'
 import Settlementdetail from './settlementdetail'
 import Customerinfo from './customerinfo'
 import Settlementsummary from './settlementsummary'
+import Menudeletesettlement from './menudeletesettlement'
 export default function page() {
   return (
     <div className="grid grid-cols-12 my-2 gap-5">
@@ -20,9 +17,7 @@ export default function page() {
           <Icongoback />
         </Link>
         <span className="font-bold text-xl">U-001</span>
-        <button className="btn btn-md btn-block-error">
-          <Icondeleteoutline /> Delete
-        </button>
+        <Menudeletesettlement/>
         <button className="btn btn-md btn-default">
           <Iconedit /> Edit
         </button>

@@ -1,6 +1,5 @@
 import Link from "next/link";
-import React from "react";
-import Inputradio from "@/components/tools/radio/radio";
+import React from "react"; 
 import Summary from "./summary";
 import Icongoback from "@/icon/icongoback";
 import Iconsaveoutline from "@/icon/iconsaveoutline";

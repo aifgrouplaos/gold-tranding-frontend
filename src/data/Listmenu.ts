@@ -34,7 +34,7 @@ export const Listmenu = [
     name: "Physical Gold",
     icon: '<i class="fa-solid fa-sack-dollar"></i>',
     type: "link",
-    link: "/phycicalgold",
+    link: "/physicalgold",
     sort: 4,
     role: ["admin", "user"],
     children: [],

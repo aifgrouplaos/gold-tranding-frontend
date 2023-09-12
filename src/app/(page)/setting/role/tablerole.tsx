@@ -5,7 +5,7 @@ import Link from "next/link";
 import Iconslidoutline from "@/icon/iconslidoutline";
 import Icondownloadoutline from "@/icon/icondownloadoutline";
 import Iconmore from "@/icon/iconmore";
-import Menucreaterole from "./createrole";
+import Menucreaterole from "./menucreaterole";
  export default function Tablerole() { 
   const [limit, setLimit] = useState(10);
   const [currectpage, setcurrectpage] = useState(1);

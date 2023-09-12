@@ -47,6 +47,7 @@ module.exports = {
         warning: "#FF9900",
         "warning-light": "#ffefd7",
         secondary: "#FFC630",
+        "secondary-light": "#FFF6DE",
         white: "#fff",
         pink: "#ff49db",
         orange: "#ff7849",

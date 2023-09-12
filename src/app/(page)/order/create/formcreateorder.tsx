@@ -9,7 +9,7 @@ import Iconbilloutline from "@/icon/iconbilloutline";
 export default function Formcreateorder() {
   return (
     <>
-      <div className="grid grid-cols-12 my-2 gap-5">
+      <div className="grid grid-cols-12 mb-4 gap-5">
         <div className="col-span-12 lg:col-span-7 flex  flex-wrap  items-center gap-2">
           <Link href="/order" className="bg-white rounded-lg p-2">
             <Icongoback />

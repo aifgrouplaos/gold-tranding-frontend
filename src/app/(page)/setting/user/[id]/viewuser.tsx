@@ -2,16 +2,16 @@
 import Link from "next/link";
 import React, { useState } from "react"; 
 import Image from "next/image";  
-import Updateuser from "./updateuser";
-import Userstatus from "./userstatus";
-import MenuDeleteUser from "./deleteuser";
+import Updateuser from "./menuupdateuser";
+import Userstatus from "./menuuserstatus";
+import MenuDeleteUser from "./menudeleteuser";
 import Icongoback from "@/icon/icongoback";
 import Icondownloadoutline from "@/icon/icondownloadoutline";
 import Iconresetpassword from "@/icon/iconresetpassword";
 import Iconphone from "@/icon/iconphone";
-import Menudeleteuser from "./deleteuser"; 
-import Menuupdateuser from "./updateuser";
-import Menustatususer from "./userstatus";
+import Menudeleteuser from "./menudeleteuser"; 
+import Menuupdateuser from "./menuupdateuser";
+import Menustatususer from "./menuuserstatus";
 export default function Viewuser() {
   const [status, setStatus] = useState(false);
   return (

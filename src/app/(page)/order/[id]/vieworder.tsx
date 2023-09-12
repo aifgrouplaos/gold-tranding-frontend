@@ -14,6 +14,7 @@ import Iconbilloutline from "@/icon/iconbilloutline";
 import Iconexchange from "@/icon/iconexchange"; 
 import Icondeleteoutline from "@/icon/icondeleteoutline"; 
 import Menumodaltrasfer from "./menumodaltrasfer";
+import Menudeleteorder from "./menudeleteorder";
 export default function Vieworder() { 
   return (
     <div className="grid grid-cols-12 my-2 gap-5">
@@ -22,10 +23,8 @@ export default function Vieworder() {
           <Icongoback />
         </Link>
         <span className="font-bold text-xl">U-001</span>
-        <button className="btn btn-md btn-block-warning">Pending</button>
-        <button className="btn btn-md btn-block-error">
-          <Icondeleteoutline /> Delete
-        </button>
+        <span className="badge-warning">Pending</span>
+        <Menudeleteorder/>
         <button className="btn btn-md btn-default">
           <Iconedit/> Edit
         </button>

@@ -4,7 +4,7 @@ import Iconedit from "@/icon/iconedit";
 import Iconsave from "@/icon/iconsave"; 
 import React, { useState } from "react"; 
 
-export default function Updaterole() { 
+export default function Menuupdaterole() { 
   const [open, setOpen] = useState(false); 
   const handleClose = () => {
     setOpen(false);
@@ -21,7 +21,7 @@ export default function Updaterole() {
       </button>
 
       <div className={`modal ${open?'show':'hide'}`}>
-        <div className="modal-content">
+        <div className="modal-content modal-sm">
           <div className="modal-header flex justify-between items-center py-5">
             <h5 className="modal-title">Update Role</h5>
             <button

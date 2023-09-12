@@ -2,12 +2,12 @@ import React from 'react'
 import Link from 'next/link'
 import Icongoback from '@/icon/icongoback'
 import Icondownloadoutline from '@/icon/icondownloadoutline'
-import Iconedit from '@/icon/iconedit'
-import Icondeleteoutline from '@/icon/icondeleteoutline' 
+import Iconedit from '@/icon/iconedit' 
 import Positionorderinformation from './positionorderinformation' 
 import Customerinfo from './customerinfo' 
 import Cutpositiondetail from './paybackdetail' 
 import Paybacksummary from './paybacksummary'
+import Menudeletepayback from './menudeletepayback'
 export default function page() {
   return (
     <div className="grid grid-cols-12 my-2 gap-5">
@@ -16,9 +16,7 @@ export default function page() {
           <Icongoback />
         </Link>
         <span className="font-bold text-xl">PB-2023-001</span> 
-        <button className="btn btn-md btn-block-error">
-          <Icondeleteoutline /> Delete
-        </button>
+        <Menudeletepayback/>
         <button className="btn btn-md btn-default">
           <Iconedit /> Edit
         </button>

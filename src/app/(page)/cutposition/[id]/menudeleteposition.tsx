@@ -3,9 +3,11 @@ import Icondeleteoutline from "@/icon/icondeleteoutline";
 import Iconquestionoutline from "@/icon/iconquestionoutline";
 import React, { useState } from "react";
 
-export default function Menudeleterole() {
+export default function Menudeleteposition() {
   const [open, setOpen] = useState(false);
-  const handleClose = () => { setOpen(false) };
+  const handleClose = () => {
+    setOpen(false);
+  };
   return (
     <>
       <button
@@ -17,11 +19,12 @@ export default function Menudeleterole() {
         <Icondeleteoutline />
         <span>Delete</span>
       </button>
-      <div className={`modal ${open ? "show" : "hide"}`}>
+
+      <div className={`modal  ${open ? 'show' : 'hide'}`}>
         <div className="modal-content modal-sm">
           <div className="modal-body">
             <div className="flex justify-center">
-              <span className="bg-danger-light text-danger text-3xl my-5 h-20 w-20 rounded-full flex justify-center items-center">
+              <span className="bg-danger-light text-danger my-5 text-3xl h-20 w-20 rounded-full flex justify-center items-center">
                 <Iconquestionoutline />
               </span>
             </div>

@@ -2,13 +2,13 @@
 import Link from "next/link";
 import React from "react"; 
 import Image from "next/image";  
-import Sellerstatus from "./sellerstatus"; 
-import Menudeleteseller from "./sellerdelete";  
+import Sellerstatus from "./menusellerstatus"; 
+import Menudeleteseller from "./menusellerdelete";  
 import Icondownloadoutline from "@/icon/icondownloadoutline";
 import Iconphone from "@/icon/iconphone"; 
 import Iconresetpassword from "@/icon/iconresetpassword";
 import Icongoback from "@/icon/icongoback";
-import Menuupdateseller from "./updateseller";
+import Menuupdateseller from "./menuupdateseller";
 export default function Viewuser() { 
   return (
     <div className="grid grid-cols-12 my-2 gap-5">

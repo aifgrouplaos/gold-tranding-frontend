@@ -1163,9 +1163,9 @@ input:checked + .slider:before {
 .modal .modal-content {
   background-color: white;
   border-radius: 5px;
-  padding: 0px 15px 15px 15px;
-  min-width: 300px;
-  max-width: 600px;
+  padding: 0px 15px 15px 15px; 
+  width: 600px;
+  min-width: 400px;
   min-height: 50px;
   max-height: 90vh;
   overflow-x: hidden;
@@ -1196,23 +1196,28 @@ input:checked + .slider:before {
 }
 
 .modal .modal-full {
-  max-width: 100% !important;
+  width: 100% !important;
+  background-color: white;
 }
 
 .modal .modal-xl {
-  max-width: 1200px;
+  width: 1200px;
+  background-color: white;
 }
 
 .modal .modal-lg {
-  max-width: 800px !important;
+  width: 800px !important;
+  background-color: white;
 }
 
 .modal .modal-md {
-  max-width: 600px !important;
+  width: 600px !important;
+  background-color: white;
 }
 
 .modal .modal-sm {
-  max-width: 400px !important;
+  width: 400px !important;
+  background-color: white;
 }
 
 .modal.show {

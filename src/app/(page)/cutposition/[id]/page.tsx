@@ -8,6 +8,7 @@ import Positionorderinformation from './positionorderinformation'
 import Customerinfo from './customerinfo' 
 import Cutpositiondetail from './cutpositiondetail'
 import Cutpositionsummary from './cutpositionsummary'
+import Menudeleteposition from './menudeleteposition'
 export default function page() {
   return (
     <div className="grid grid-cols-12 my-2 gap-5">
@@ -16,12 +17,10 @@ export default function page() {
           <Icongoback />
         </Link>
         <span className="font-bold text-xl">U-001</span>
-        <span className="btn btn-error">
+        <span className="badge-error">
           Lost
         </span>
-        <button className="btn btn-md btn-block-error">
-          <Icondeleteoutline /> Delete
-        </button>
+        <Menudeleteposition/>
         <button className="btn btn-md btn-default">
           <Iconedit /> Edit
         </button>

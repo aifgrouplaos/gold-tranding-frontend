@@ -1,14 +1,7 @@
 "use client";
 import Iconadd from "@/icon/iconadd";
 import Iconclose from "@/icon/iconclose";
-import Iconsave from "@/icon/iconsave";
-import {
-  Dialog,
-  DialogContent,
-  DialogContentText,
-  DialogProps,
-  DialogTitle,
-} from "@mui/material";
+import Iconsave from "@/icon/iconsave"; 
 import React, { useState } from "react";
 
 export default function Menucreaterole() {
@@ -29,7 +22,7 @@ export default function Menucreaterole() {
       </button>
 
       <div className={`modal ${open?'show':'hide'}`}>
-        <div className="modal-content">
+        <div className="modal-content  modal-sm">
           <div className="modal-header flex justify-between items-center py-5">
             <h5 className="modal-title">Create New Role</h5>
             <button

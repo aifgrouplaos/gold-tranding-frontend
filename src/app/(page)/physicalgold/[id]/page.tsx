@@ -2,15 +2,13 @@ import React from 'react'
 import Link from 'next/link'
 import Icongoback from '@/icon/icongoback'
 import Icondownloadoutline from '@/icon/icondownloadoutline'
-import Iconedit from '@/icon/iconedit'
-import Icondeleteoutline from '@/icon/icondeleteoutline' 
+import Iconedit from '@/icon/iconedit' 
 import Positionorderinformation from './positionorderinformation' 
 import Customerinfo from './customerinfo'  
 import Physicaldetail from './physicaldetail'
-import Goldsummary from './goldsummary'
-import Icondelivery from '@/icon/icondelivery'
-import Icondeliveryinline from '@/icon/icondeliveryinline'
+import Goldsummary from './goldsummary' 
 import Updatedelivery from './updatedelivery'
+import Menudeletephysicalgold from './menudeletephysicalgold'
 export default function page() {
   return (
     <div className="grid grid-cols-12 my-2 gap-5">
@@ -19,12 +17,10 @@ export default function page() {
           <Icongoback />
         </Link>
         <span className="font-bold text-xl">PB-2023-001</span> 
-        <span className="btn btn-md btn-warning">
+        <span className="badge-warning">
           Pending
         </span>
-        <button className="btn btn-md btn-block-error">
-          <Icondeleteoutline /> Delete
-        </button>
+        <Menudeletephysicalgold/>
         <button className="btn btn-md btn-default">
           <Iconedit /> Edit
         </button>
@@ -32,10 +28,7 @@ export default function page() {
           <Icondownloadoutline /> Download
         </button>
       </div>
-      <div className='col-span-12 lg:col-span-4 text-end'>
-        {/* <button className='btn btn-primary'>
-          <Icondeliveryinline/> Update to Derivery
-        </button> */}
+      <div className='col-span-12 lg:col-span-4 text-end'> 
         <Updatedelivery/>
       </div>
 

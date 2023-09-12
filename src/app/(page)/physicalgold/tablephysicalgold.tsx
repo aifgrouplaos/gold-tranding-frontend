@@ -1,8 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Pagination from "@/components/pagination/pagination";
-import Link from "next/link";
-import Iconadd from "@/icon/iconadd";
+import Link from "next/link"; 
 import Iconslidoutline from "@/icon/iconslidoutline";
 import Icondownloadoutline from "@/icon/icondownloadoutline";
 import Iconmore from "@/icon/iconmore";
@@ -322,7 +321,7 @@ export default function Tablephysicalgold() {
                   <td>25/07/2023</td>
                   <td>
                     <Link
-                      href="/phycicalgold/1"
+                      href="/physicalgold/1"
                       className="btn btn-sm btn-default"
                     >
                       <Iconmore />
@@ -344,7 +343,7 @@ export default function Tablephysicalgold() {
                   <td>25/07/2023</td>
                   <td>
                     <Link
-                      href="/phycicalgold/1"
+                      href="/physicalgold/1"
                       className="btn btn-sm btn-default"
                     >
                       <Iconmore />
@@ -366,7 +365,7 @@ export default function Tablephysicalgold() {
                   <td>25/07/2023</td>
                   <td>
                     <Link
-                      href="/phycicalgold/1"
+                      href="/physicalgold/1"
                       className="btn btn-sm btn-default"
                     >
                       <Iconmore />

@@ -3,7 +3,7 @@ import Icondeleteoutline from "@/icon/icondeleteoutline";
 import Iconquestionoutline from "@/icon/iconquestionoutline";
 import React, { useState } from "react";
 
-export default function Menudeleterole() {
+export default function Menudeletesettlement() {
   const [open, setOpen] = useState(false);
   const handleClose = () => { setOpen(false) };
   return (

@@ -1,10 +1,10 @@
 "use client";
 import Link from "next/link";
 import React, { useState } from "react"; 
-import Menudeleterole from "./menudeleterole";
-import Updaterole from "./updaterole";
+import Menudeleterole from "./menudeleterole"; 
 import Icongoback from "@/icon/icongoback";
 import Icondownloadoutline from "@/icon/icondownloadoutline";
+import Menuupdaterole from "./menuupdaterole";
 export default function Viewrole() {
   return (
     <div className="grid grid-cols-12 my-2 gap-5">
@@ -14,7 +14,7 @@ export default function Viewrole() {
         </Link>
         <span className="font-bold text-xl">U-001</span>
         <Menudeleterole />
-        <Updaterole />
+        <Menuupdaterole />
         <button className="btn btn-md btn-default">
           <Icondownloadoutline /> Download
         </button>
