@@ -22,6 +22,7 @@
   --warning-light: #ffefd7;
   --warning-dark: #e18904;
   --info: #42c5f5;
+  --info-light: #cbf1ff;
   --secondary: #ffc630;
   --secondary-light: #fff2d0;
   --secondary-dark: #dea206;
@@ -599,13 +600,24 @@ main .content::-webkit-scrollbar-thumb {
   padding: 10px;
 }
 
+/* info */
+.badge-info {
+  user-select: none;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  padding: 5px 8px;
+  border-radius: 5px;
+  color: var(--info);
+  background-color: var(--info-light);
+}
 /* primary */
 .badge-primary {
   user-select: none;
   cursor: pointer;
   text-align: center;
   display: inline-block;
-  padding: 2px 8px;
+  padding: 5px 8px;
   border-radius: 5px;
   color: var(--primary);
   background-color: var(--primary-light);
@@ -617,7 +629,7 @@ main .content::-webkit-scrollbar-thumb {
   cursor: pointer;
   text-align: center;
   display: inline-block;
-  padding: 2px 8px;
+  padding: 5px 8px;
   border-radius: 5px;
   color: var(--warning);
   background-color: var(--warning-light);
@@ -629,7 +641,7 @@ main .content::-webkit-scrollbar-thumb {
   cursor: pointer;
   text-align: center;
   display: inline-block;
-  padding: 2px 8px;
+  padding: 5px 8px;
   border-radius: 5px;
   color: var(--secondary);
   background-color: var(--secondary-light);
@@ -640,11 +652,22 @@ main .content::-webkit-scrollbar-thumb {
   user-select: none;
   text-align: center;
   display: inline-block;
-  padding: 2px 8px;
+  padding: 5px 8px;
   cursor: pointer;
   border-radius: 5px;
   color: var(--success);
   background-color: var(--success-light);
+}
+/* danger */
+.badge-danger {
+  user-select: none;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  padding: 5px 8px;
+  border-radius: 5px;
+  color: var(--danger);
+  background-color: var(--danger-light);
 }
 /* error */
 .badge-error {
@@ -652,7 +675,7 @@ main .content::-webkit-scrollbar-thumb {
   cursor: pointer;
   text-align: center;
   display: inline-block;
-  padding: 2px 8px;
+  padding: 5px 8px;
   border-radius: 5px;
   color: var(--danger);
   background-color: var(--danger-light);
@@ -663,7 +686,7 @@ main .content::-webkit-scrollbar-thumb {
   cursor: pointer;
   text-align: center;
   display: inline-block;
-  padding: 2px 8px;
+  padding: 5px 8px;
   border-radius: 5px;
   color: var(--gray);
   background-color: var(--gray-light);
