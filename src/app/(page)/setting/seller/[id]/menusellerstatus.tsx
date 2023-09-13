@@ -1,7 +1,6 @@
 "use client"; 
 import Iconquestionoutline from "@/icon/iconquestionoutline";
 import React, { useState } from "react";
-
 export default function Menudeleteseller() {
   const [open, setOpen] = useState(false);
   const handleClose = () => { setOpen(false) };

@@ -1,14 +1,36 @@
 "use client"; 
-import Iconclose from "@/icon/iconclose";
-import Icondownloadoutline from "@/icon/icondownloadoutline";
-import Iconeditoutline from "@/icon/iconeditoutline"; 
-import Iconsave from "@/icon/iconsave";
+import { Converfiletobase64 } from "@/components/getbase64/Converfiletobase64";
+import Iconclose from "@/icon/iconclose"; 
+import Iconeditoutline from "@/icon/iconeditoutline";  
+import Iconsaveoutline from "@/icon/iconsaveoutline";
 import Image from "next/image";
 import React, { useState } from "react";
 
 export default function Menuupdateseller() {
   const [open, setOpen] = useState(false);
   const handleClose = () => { setOpen(false) };
+
+  const [formdata, setFormdata] = useState({
+    profile: "",
+    name: "",
+    codecountry: "",
+    phone: "",
+  });
+
+  const handleChange = (e: any) => {
+    setFormdata({
+      ...formdata,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+
+  const handleSave = (e: any) => {
+    e.preventDefault();
+    console.log("formdata");
+    console.log(formdata);
+  }
+
   return (
     <>
       <button
@@ -18,10 +40,10 @@ export default function Menuupdateseller() {
         onClick={() => setOpen(true)}
       >
         <Iconeditoutline />
-        <span>Delete</span>
+        <span>Update</span>
       </button>
       <div className={`modal ${open ? "show" : "hide"}`}>
-        <div className="modal-content">
+        <div className="modal-content modal-sm">
           <div className="modal-header flex justify-between items-center py-5">
             <h5 className="modal-title">Update Seller</h5>
             <button
@@ -31,44 +53,65 @@ export default function Menuupdateseller() {
             ><Iconclose/></button>
             </div>
           <div className="modal-body">
-            <div className="grid grid-cols-12 gap-2">
-              <div className="col-span-12 flex items-center gap-3">
-                <Image
-                  src="/avatar.jpg"
-                  width="100"
-                  height="100"
-                  alt="AAA"
-                  className="rounded shadow"
-                />
-                <button className="btn btn-default">
-                  <Icondownloadoutline />
-                  Upload
-                </button>
-              </div>
-              <div className="col-span-12">
-                <b>Seller Name</b>
-                <input type="text" className="form-control" />
-              </div>
+          <form method="post" onSubmit={handleSave}>
+              <div className="grid grid-cols-12 gap-2">
+                <div className="col-span-12 flex gap-2 items-center">
+                  <Image
+                    src={formdata.profile || "/avatar.jpg"}
+                    width="80"
+                    height="100"
+                    alt="profile"
+                    className="rounded shadow"
+                  />
+                  <input required type="file" className="form-control" name="profile"
+                    onChange={async (event) => {
+                      Converfiletobase64(event).then((res: any) => {
+                        setFormdata({
+                          ...formdata,
+                          profile: res,
+                        });
+                      });
+                    }}
+                  />
+                </div>
+                <div className="col-span-12">
+                  <b>Seller Name</b>
+                  <input required type="text" className="form-control" name="name" value={formdata.name}
+                    onChange={(e) => {
+                      handleChange(e)
+                    }} />
+                </div>
 
-              <div className="col-span-12">
-                <b>Phone Number</b>
+                <div className="col-span-12">
+                  <b>Phone Number</b>
+                </div>
+                <div className="col-span-4">
+                  <select required className="form-select" name="codecountry" value={formdata.codecountry}
+                    onChange={(e) => {
+                      handleChange(e)
+                    }} >
+                    <option value="586">+586</option>
+                    <option value="63">+63</option>
+                    <option value="64">+64</option>
+                  </select>
+                </div>
+                <div className="col-span-8">
+                  <input required type="text" className="form-control" name="phone" value={formdata.phone}
+                    onChange={(e) => {
+                      handleChange(e)
+                    }} />
+                </div>
+                <div className="col-span-12 mt-3">
+                  <button
+                    type="submit"
+                    className="btn btn-secondary w-full"
+                  >
+                    <Iconsaveoutline />
+                    Save Change
+                  </button>
+                </div>
               </div>
-              <div className="col-span-5">
-                <input type="text" className="form-control" />
-              </div>
-              <div className="col-span-7">
-                <input type="text" className="form-control" />
-              </div>
-              <div className="col-span-12 mt-3">
-                <button
-                  onClick={handleClose}
-                  className="btn btn-secondary w-full"
-                >
-                  <Iconsave />
-                  Create
-                </button>
-              </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>
