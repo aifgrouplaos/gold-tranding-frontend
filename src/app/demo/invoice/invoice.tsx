@@ -1,14 +1,10 @@
 "use client";
 import React from 'react'
 
-export default function Invoice() {
-    let funprint = () => {
-        window.print()
-    }
- 
+export default function Invoice() {  
     return (
         <div className='bg-white p-2 rounded'>
-            <h5>Invoice Detail...</h5>
+            <h5>ໃບບິນຮັບເງິນ...</h5>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, pariatur nisi suscipit culpa beatae quisquam quod sed doloremque maxime impedit ipsum reiciendis dignissimos eum porro iusto quam aliquam molestias laudantium autem. Inventore tempore ullam hic iste quisquam adipisci et quo nisi ad dolore! Deleniti labore id doloremque. Mollitia ullam facere reiciendis delectus minus odit optio reprehenderit repudiandae. Nam excepturi quae doloribus non totam quisquam veritatis. Accusamus numquam neque ipsum fugiat quo. Pariatur tempore fuga culpa non eveniet voluptas id, quas alias vel doloribus ullam aliquam omnis officia deserunt, tenetur similique veritatis repellendus quibusdam minus et distinctio, illum ratione possimus. Voluptatem necessitatibus laboriosam sunt non officia architecto ratione eveniet fugiat vero at voluptas reiciendis autem odit molestiae consectetur aut, ullam quasi rerum. Expedita omnis quia accusamus inventore. Quo, sapiente eaque, laboriosam quibusdam dolore hic aut autem, possimus similique corporis laborum nostrum porro incidunt deleniti itaque accusantium veritatis! Quasi necessitatibus magni neque fugit eum est voluptates voluptate sed qui explicabo delectus a amet nesciunt, accusantium ipsam mollitia deserunt. Rerum obcaecati natus odit modi quibusdam delectus commodi quis optio? Tenetur, cum, laboriosam dignissimos impedit voluptatum, natus ex laudantium quibusdam eaque consequatur autem quisquam! Quae ab repellendus unde, inventore doloribus adipisci enim optio facere.</p>
 
             <div id='printablediv'>
@@ -45,12 +41,7 @@ export default function Invoice() {
                             </td>
                         </tr>
                     </tbody>
-                </table>
-                <hr />
-                <button className='btn btn-secondary my-2' onClick={funprint} >
-                    <i className='fa fa-print'></i>
-                    Print
-                </button>
+                </table> 
             </div>
         </div>
     )
